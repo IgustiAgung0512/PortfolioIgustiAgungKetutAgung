@@ -1,0 +1,30 @@
+/*! Font Awesome subset — only glyphs used in this page. Based on Font Awesome Free (fontawesome.com), CC BY 4.0 / SIL OFL 1.1 / MIT License. */
+:root,:host{--fa-family-classic:'Font Awesome 7 Free';--fa-family-brands:'Font Awesome 7 Brands'}
+@font-face{font-family:"Font Awesome 7 Free";font-style:normal;font-weight:900;font-display:swap;src:url("../webfonts/fa-solid-900.woff2") format("woff2")}
+@font-face{font-family:"Font Awesome 7 Brands";font-style:normal;font-weight:400;font-display:swap;src:url("../webfonts/fa-brands-400.woff2") format("woff2")}
+.fa-solid,.fa-brands,.fa{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;display:inline-block;font-feature-settings:normal;font-style:normal;font-synthesis:none;font-variant:normal;line-height:1;text-align:center;text-rendering:auto;width:1.25em}
+.fa-solid{font-family:var(--fa-family-classic);font-weight:900}
+.fa-brands{font-family:var(--fa-family-brands);font-weight:400}
+.fa-solid::before,.fa-brands::before{content:var(--fa)}
+.fa-arrow-right{--fa:"\f061"}
+.fa-arrow-up-right-from-square{--fa:"\f08e"}
+.fa-bezier-curve{--fa:"\f55b"}
+.fa-chevron-right{--fa:"\f054"}
+.fa-clock{--fa:"\f017"}
+.fa-code{--fa:"\f121"}
+.fa-download{--fa:"\f019"}
+.fa-envelope{--fa:"\f0e0"}
+.fa-location-dot{--fa:"\f3c5"}
+.fa-pen-nib{--fa:"\f5ad"}
+.fa-terminal{--fa:"\f120"}
+.fa-wind{--fa:"\f72e"}
+.fa-css3-alt{--fa:"\f38b"}
+.fa-figma{--fa:"\f799"}
+.fa-github{--fa:"\f09b"}
+.fa-html5{--fa:"\f13b"}
+.fa-instagram{--fa:"\f16d"}
+.fa-js{--fa:"\f3b8"}
+.fa-linkedin{--fa:"\f08c"}
+.fa-linkedin-in{--fa:"\f0e1"}
+.fa-react{--fa:"\f41b"}
+.fa-whatsapp{--fa:"\f232"}
