@@ -1,457 +1,1317 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio I Gusti Agung Ketut Agung — Web Developer yang menggabungkan kreativitas dan teknologi untuk membangun pengalaman digital modern, interaktif, dan responsif.">
-    <title>Portfolio - I Gusti Agung Ketut Agung</title>
+    <meta name="description"
+        content="Portfolio I Gusti Agung Ketut Agung, S.Kom — Profesional di bidang Sistem Informasi, Web Development, Administrasi Bisnis (HR/SDM & Keuangan), dan Business Partnership.">
+    <meta name="author" content="I Gusti Agung Ketut Agung, S.Kom">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="canonical" href="https://igustiagung0512.github.io/PortfolioIgustiAgungKetutAgung/">
+
+    <title>Portfolio - I Gusti Agung Ketut Agung, S.Kom | IT & Business Administration</title>
+
+    <!-- Favicon & App Icons (Theme Matching: Royal Blue #2563eb & Gold #f59e0b Monogram) -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=2">
+    <link rel="alternate icon" type="image/svg+xml" href="assets/favicon.svg?v=2">
+    <link rel="apple-touch-icon" href="assets/favicon.svg?v=2">
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://igustiagung0512.github.io/PortfolioIgustiAgungKetutAgung/">
+    <meta property="og:title" content="Portfolio - I Gusti Agung Ketut Agung, S.Kom | IT & Business Administration">
+    <meta property="og:description"
+        content="Sarjana Sistem Informasi (Cumlaude) dengan keahlian multidisiplin: Web Development, Administrasi Bisnis & HR (Staff SDM), Administrasi Keuangan E-Commerce, dan Kemitraan Bisnis.">
+    <meta property="og:image"
+        content="https://igustiagung0512.github.io/PortfolioIgustiAgungKetutAgung/assets/WebPortfolio.webp">
+    <meta property="og:locale" content="id_ID">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://igustiagung0512.github.io/PortfolioIgustiAgungKetutAgung/">
+    <meta name="twitter:title" content="Portfolio - I Gusti Agung Ketut Agung, S.Kom | IT & Business Administration">
+    <meta name="twitter:description"
+        content="Sarjana Sistem Informasi (Cumlaude) dengan keahlian multidisiplin: Web Development, Administrasi Bisnis & HR, dan Keuangan.">
+    <meta name="twitter:image"
+        content="https://igustiagung0512.github.io/PortfolioIgustiAgungKetutAgung/assets/WebPortfolio.webp">
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "I Gusti Agung Ketut Agung, S.Kom",
+      "honorificSuffix": "S.Kom",
+      "url": "https://igustiagung0512.github.io/PortfolioIgustiAgungKetutAgung/",
+      "jobTitle": ["Web Developer", "Business Administrator", "System Analyst"],
+      "description": "Sarjana Sistem Informasi (Cumlaude) yang memadukan keahlian Web Development, Administrasi Bisnis & HR, serta Analisis Sistem.",
+      "image": "https://igustiagung0512.github.io/PortfolioIgustiAgungKetutAgung/assets/hero-photo-1.webp",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universitas Putra Indonesia YPTK Padang"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bogor",
+        "addressRegion": "Jawa Barat",
+        "addressCountry": "ID"
+      },
+      "sameAs": [
+        "https://github.com/IgustiAgung0512",
+        "https://linkedin.com/in/i-gusti-agung-ketut-agung",
+        "https://www.instagram.com/gusti_agung29"
+      ]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="preload" as="image" href="assets/hero-photo-1.webp">
 
     <link rel="stylesheet" href="tailwind.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-white text-slate-900 font-['Poppins'] overflow-x-hidden">
 
-<header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 py-4 bg-white/80 backdrop-blur-md border-b border-slate-100">
-    <nav class="container mx-auto px-6 flex justify-between items-center">
-        <div class="text-xl md:text-2xl font-bold tracking-tighter whitespace-nowrap">
-            I Gusti Agung<span class="text-blue-600"> Ketut Agung</span>
+    <div id="scroll-progress" role="progressbar" aria-label="Indikator membaca halaman" aria-valuemin="0"
+        aria-valuemax="100"></div>
+
+    <header id="main-header"
+        class="fixed w-full top-0 z-50 transition-all duration-300 py-4 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <nav class="container mx-auto px-6 flex justify-between items-center" aria-label="Navigasi Utama">
+            <a href="#home"
+                class="text-xl md:text-2xl font-bold tracking-tighter whitespace-nowrap text-slate-900 no-underline">
+                I Gusti Agung<span class="text-blue-600"> Ketut Agung</span><span
+                    class="text-xs md:text-sm text-slate-400 font-medium ml-1">, S.Kom</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link relative">Home<span></span></a></li>
+                <li><a href="#about" class="nav-link relative">About<span></span></a></li>
+                <li><a href="#experience" class="nav-link relative">Experience<span></span></a></li>
+                <li><a href="#certificates" class="nav-link relative">Certificates<span></span></a></li>
+                <li><a href="#project" class="nav-link relative">Project<span></span></a></li>
+                <li>
+                    <a href="#contact" class="nav-contact-btn">
+                        <span>Contact</span>
+                        <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <button id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobile-menu"
+                class="flex flex-col justify-center items-center w-10 h-10 bg-slate-50 rounded-xl space-y-1.5 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                <span class="w-6 h-0.5 bg-slate-900 transition-all duration-300" id="line1"></span>
+                <span class="w-6 h-0.5 bg-slate-900 transition-all duration-300" id="line2"></span>
+                <span class="w-6 h-0.5 bg-slate-900 transition-all duration-300" id="line3"></span>
+            </button>
+        </nav>
+
+        <div id="mobile-menu"
+            class="hidden fixed inset-x-0 top-[72px] bg-white border-b border-slate-100 shadow-2xl z-40 transform origin-top transition-all duration-300 opacity-0 scale-y-0">
+            <ul class="flex flex-col p-6 space-y-5 font-bold text-base text-slate-800">
+                <li><a href="#home" class="mobile-link flex justify-between items-center">Home <i
+                            class="fa-solid fa-chevron-right text-xs text-slate-400" aria-hidden="true"></i></a></li>
+                <li><a href="#about" class="mobile-link flex justify-between items-center">About <i
+                            class="fa-solid fa-chevron-right text-xs text-slate-400" aria-hidden="true"></i></a></li>
+                <li><a href="#experience" class="mobile-link flex justify-between items-center">Experience <i
+                            class="fa-solid fa-chevron-right text-xs text-slate-400" aria-hidden="true"></i></a></li>
+                <li><a href="#certificates" class="mobile-link flex justify-between items-center">Certificates <i
+                            class="fa-solid fa-chevron-right text-xs text-slate-400" aria-hidden="true"></i></a></li>
+                <li><a href="#project" class="mobile-link flex justify-between items-center">Project <i
+                            class="fa-solid fa-chevron-right text-xs text-slate-400" aria-hidden="true"></i></a></li>
+                <li><a href="#contact" class="mobile-link py-3 bg-blue-600 text-white text-center rounded-2xl">Contact
+                        Me</a></li>
+            </ul>
         </div>
+    </header>
 
-        <ul class="hidden md:flex items-center space-x-8 font-medium text-sm">
-            <li><a href="#home" class="nav-link relative hover:text-blue-600 transition">Home<span></span></a></li>
-            <li><a href="#about" class="nav-link relative hover:text-blue-600 transition">About<span></span></a></li>
-            <li><a href="#project" class="nav-link relative hover:text-blue-600 transition">Project<span></span></a></li>
-           <li>
-    <a href="#contact" class="group relative px-6 py-2.5 bg-slate-900 text-white rounded-full overflow-hidden transition-all hover:pr-10 active:scale-95 shadow-lg flex items-center">
-        <span class="relative z-10 transition-all">Contact</span>
-        <i class="fa-solid fa-arrow-right absolute right-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" aria-hidden="true"></i>
-    </a>
-</li>
-        </ul>
-
-        <button id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden flex flex-col justify-center items-center w-10 h-10 bg-slate-50 rounded-xl space-y-1.5 focus:outline-none">
-            <span class="w-6 h-0.5 bg-slate-900 transition-all duration-300" id="line1"></span>
-            <span class="w-6 h-0.5 bg-slate-900 transition-all duration-300" id="line2"></span>
-            <span class="w-6 h-0.5 bg-slate-900 transition-all duration-300" id="line3"></span>
-        </button>
-    </nav>
-
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-x-0 top-[72px] bg-white border-b border-slate-100 shadow-2xl z-40 transform origin-top transition-all duration-300 opacity-0 scale-y-0">
-        <ul class="flex flex-col p-8 space-y-6 font-bold text-lg text-slate-800">
-            <li><a href="#home" class="mobile-link flex justify-between items-center">Home <i class="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i></a></li>
-            <li><a href="#about" class="mobile-link flex justify-between items-center">About <i class="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i></a></li>
-            <li><a href="#project" class="mobile-link flex justify-between items-center">Project <i class="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i></a></li>
-            <li><a href="#contact" class="mobile-link py-4 bg-blue-600 text-white text-center rounded-2xl">Contact Me</a></li>
-        </ul>
-    </div>
-</header>
-
-    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
-    <div class="absolute inset-0 z-0 pointer-events-none">
-        <div class="absolute -top-20 -left-20 w-[500px] h-[500px] bg-yellow-100/50 blur-[100px] rounded-full"></div>
-        <div class="absolute top-1/2 -right-20 w-[400px] h-[400px] bg-blue-50/80 blur-[80px] rounded-full"></div>
-    </div>
-
-    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center relative z-10 reveal">
-        <div class="w-full md:w-3/5 space-y-6 text-center md:text-left">
-            <p class="text-blue-500 font-bold tracking-widest uppercase text-xs">Fresh Perspective & Innovative</p>
-            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">
-                Hi, I'm <br class="md:hidden">
-                <span id="typing-text" class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-yellow-500"></span>
-            </h1>
-            <p class="text-slate-600 text-lg max-w-lg mx-auto md:mx-0">
-                Seorang profesional yang menggabungkan kreativitas dan teknologi untuk menciptakan pengalaman digital yang berkesan.
-            </p>
-
-            <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
-                <a href="#project" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-yellow-500 transition-all font-semibold shadow-lg shadow-blue-100">Explore Work</a>
-                <a href="assets/I Gusti Agung Ketut Agung bgr.pdf" download class="group border-2 border-slate-200 px-8 py-3 rounded-lg font-semibold hover:border-blue-600 transition-all flex items-center gap-2 text-slate-700">
-                    <i class="fa-solid fa-download group-hover:text-blue-600" aria-hidden="true"></i> Download CV
-                </a>
+    <main id="main-content">
+        <section id="home" class="relative min-h-screen flex items-center pt-24 md:pt-20 overflow-hidden bg-white">
+            <div class="absolute inset-0 z-0 pointer-events-none">
+                <div class="absolute -top-20 -left-20 w-[500px] h-[500px] bg-yellow-100/50 blur-[100px] rounded-full">
+                </div>
+                <div class="absolute top-1/2 -right-20 w-[400px] h-[400px] bg-blue-50/80 blur-[80px] rounded-full">
+                </div>
             </div>
 
-            <div class="flex items-center justify-center md:justify-start gap-6 pt-8 text-2xl">
-                <a href="https://wa.me/6289524254219" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp" class="text-slate-500 hover:text-green-500 transition-all transform hover:scale-110">
-                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/IgustiAgung0512" target="_blank" rel="noopener" aria-label="Kunjungi GitHub" class="text-slate-500 hover:text-black transition-all transform hover:scale-110">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="mailto:igustiagung00@gmail.com" aria-label="Kirim Email" class="text-slate-500 hover:text-red-500 transition-all transform hover:scale-110">
-                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                </a>
-                <a href="https://linkedin.com/in/i-gusti-agung-ketut-agung" target="_blank" rel="noopener" aria-label="Kunjungi LinkedIn" class="text-slate-500 hover:text-blue-600 transition-all transform hover:scale-110">
-                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center relative z-10 reveal">
+                <div class="w-full md:w-3/5 space-y-6 text-center md:text-left">
+                    <div
+                        class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 border border-blue-100 rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+                        <p class="text-blue-700 font-bold tracking-wider uppercase text-[11px]">Sistem Informasi • IT
+                            Development • Business Administration</p>
+                    </div>
 
-        <div class="w-full md:w-2/5 mt-12 md:mt-0 relative flex justify-center" style="perspective: 1000px;">
-            <div id="photo-container" class="relative group w-64 h-80 md:w-80 md:h-[450px] overflow-hidden rounded-2xl shadow-2xl ring-8 ring-white transition-all duration-300 cursor-pointer">
-                <img id="img-1" src="assets/hero-photo-1.webp" width="467" height="700" fetchpriority="high" decoding="async" alt="Foto I Gusti Agung Ketut Agung" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100 group-hover:opacity-0">
-                <img id="img-2" src="assets/luck.webp" width="467" height="700" loading="lazy" decoding="async" alt="Foto I Gusti Agung Ketut Agung" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0 group-hover:opacity-100">
-            </div>
-        </div>
-    </div>
-</section>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                        Hi, I'm <br class="md:hidden">
+                        <span id="typing-text"
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-yellow-500"></span><span
+                            id="typing-cursor" class="typing-cursor" aria-hidden="true">|</span>
+                    </h1>
+                    <p class="text-slate-600 text-base md:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
+                        Sarjana Sistem Informasi (Predikat Cumlaude) yang memadukan kompetensi pengembangan teknologi
+                        informasi, analisis sistem, serta administrasi operasional bisnis (SDM & Keuangan) untuk
+                        menciptakan solusi yang efisien dan berdampak nyata.
+                    </p>
 
-    <section id="about" class="py-24 relative bg-white">
-        <div class="container mx-auto px-6 relative z-10 reveal">
-            <div class="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-24">
-                
-                <div class="w-full md:w-1/3 flex justify-center">
-                    <div class="relative group">
-                        <div class="absolute -top-4 -left-4 w-full h-full border-2 border-blue-400 rounded-3xl rotate-3 group-hover:rotate-0 transition-transform duration-500"></div>
-                        <div class="relative w-60 h-80 md:w-72 md:h-96 overflow-hidden rounded-3xl shadow-xl bg-white p-2">
-                            <img src="assets/luck.webp" width="467" height="700" loading="lazy" decoding="async" alt="Foto About I Gusti Agung Ketut Agung" class="w-full h-full object-cover rounded-2xl">
-                        </div>
+                    <div class="hero-btn-group">
+                        <a href="#experience" class="btn-hero-primary">
+                            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                            <span>Lihat Pengalaman</span>
+                        </a>
+                        <a href="assets/CV-I-Gusti-Agung-Ketut-Agung.pdf" download class="btn-hero-secondary">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i>
+                            <span>Download CV (PDF)</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-social-links">
+                        <a href="https://wa.me/6289524254219?text=Halo%20I%20Gusti%20Agung,%20saya%20tertarik%20untuk%20berdiskusi%20mengenai%20peluang%20kerja%20atau%20proyek."
+                            target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp"
+                            class="hero-social-btn wa" title="WhatsApp">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/IgustiAgung0512" target="_blank" rel="noopener noreferrer"
+                            aria-label="Kunjungi GitHub" class="hero-social-btn gh" title="GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:igustiagung00@gmail.com" aria-label="Kirim Email" class="hero-social-btn email"
+                            title="Email">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/i-gusti-agung-ketut-agung-160415269" target="_blank"
+                            rel="noopener noreferrer" aria-label="Kunjungi LinkedIn" class="hero-social-btn li"
+                            title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 space-y-8">
-                    <div class="inline-block px-5 py-2 bg-blue-50 rounded-full">
-                        <p class="text-sm font-bold text-blue-600 uppercase tracking-widest">About Me</p>
+                <div class="w-full md:w-2/5 mt-12 md:mt-0 relative flex justify-center" style="perspective: 1000px;">
+                    <div id="photo-container"
+                        class="relative group w-64 h-80 md:w-80 md:h-[450px] overflow-hidden rounded-2xl shadow-2xl ring-8 ring-white transition-all duration-300 cursor-pointer">
+                        <img id="img-1" src="assets/hero-photo-1.webp" width="467" height="700" fetchpriority="high"
+                            decoding="async" alt="Foto I Gusti Agung Ketut Agung"
+                            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100 group-hover:opacity-0">
+                        <img id="img-2" src="assets/luck.webp" width="467" height="700" loading="lazy" decoding="async"
+                            alt="Foto I Gusti Agung Ketut Agung"
+                            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0 group-hover:opacity-100">
                     </div>
-                    <h2 class="text-4xl md:text-5xl font-bold text-slate-900 leading-[1.2]">
-                        Menciptakan Solusi <span class="text-blue-600">Digital</span> yang Memberikan Dampak Nyata
-                    </h2>
-                    <p class="text-slate-600 text-lg leading-relaxed">
-                        Saya <strong>I Gusti Agung Ketut Agung</strong>, seorang profesional yang fokus pada penggabungan estetika desain dengan fungsionalitas teknologi modern.
-                    </p>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4">
-    <div class="space-y-4">
-        <p class="text-xs font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2">
-            <i class="fa-solid fa-code text-blue-500 text-base" aria-hidden="true"></i> Core Skills
-        </p>
-        <div class="flex flex-wrap gap-2">
-            <span class="skill-badge flex items-center gap-2">
-                <i class="fa-brands fa-html5 text-[#E34F26]" aria-hidden="true"></i> HTML5/CSS3
-            </span>
-            <span class="skill-badge flex items-center gap-2">
-                <i class="fa-brands fa-js text-[#F7DF1E]" aria-hidden="true"></i> JavaScript
-            </span>
-            <span class="skill-badge flex items-center gap-2">
-                <i class="fa-solid fa-wind text-[#06B6D4]" aria-hidden="true"></i> Tailwind CSS
-            </span>
-            <span class="skill-badge flex items-center gap-2">
-                <i class="fa-brands fa-react text-[#61DAFB]" aria-hidden="true"></i> React JS
-            </span>
-        </div>
-    </div>
-
-    <div class="space-y-4">
-        <p class="text-xs font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2">
-            <i class="fa-solid fa-pen-nib text-blue-500 text-base" aria-hidden="true"></i> Tools & Design
-        </p>
-        <div class="flex flex-wrap gap-2">
-            <span class="skill-badge-alt flex items-center gap-2">
-                <i class="fa-solid fa-bezier-curve text-pink-500" aria-hidden="true"></i> UI/UX Design
-            </span>
-            <span class="skill-badge-alt flex items-center gap-2">
-                <i class="fa-brands fa-figma text-[#F24E1E]" aria-hidden="true"></i> Figma
-            </span>
-            <span class="skill-badge-alt flex items-center gap-2">
-                <i class="fa-brands fa-github text-slate-900" aria-hidden="true"></i> Git / GitHub
-            </span>
-            <span class="skill-badge-alt flex items-center gap-2">
-                <i class="fa-solid fa-terminal text-blue-500" aria-hidden="true"></i> VS Code
-            </span>
-        </div>
-    </div>
-</div>
                 </div>
             </div>
-        </div>
-    </section>
-<section id="project" class="py-24 bg-slate-50">
-    <div class="container mx-auto px-6 reveal">
-        <div class="text-center mb-16">
-            <div class="inline-block px-5 py-2 bg-blue-100 rounded-full mb-4">
-                <p class="text-sm font-bold text-blue-600 uppercase tracking-widest">My Portfolio</p>
-            </div>
-            <h2 class="text-4xl md:text-5xl font-bold text-slate-900">Featured Projects</h2>
-            <p class="text-slate-600 mt-4 max-w-2xl mx-auto">Kumpulan solusi digital yang saya kembangkan, mulai dari aplikasi interaktif hingga pengembangan landing page profesional.</p>
-        </div>
+        </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col">
-                <div class="relative overflow-hidden h-52">
-                    <img src="assets/WebPortfolio.webp" width="900" height="507" loading="lazy" decoding="async" alt="Screenshot Personal Web Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute top-4 right-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Current Site</div>
-                </div>
-                <div class="p-6 flex-grow">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Personal Web Portfolio</h3>
-                    <p class="text-slate-500 text-sm mb-6">Website portfolio interaktif yang sedang Anda jelajahi, dibangun dengan fokus pada estetika dan performa.</p>
-                    <a href="https://igustiagung0512.github.io/PortfolioIgustiAgungKetutAgung/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/link">
-                        Lihat Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
+        <section id="about" class="py-24 relative bg-white border-t border-slate-100">
+            <div class="container mx-auto px-6 relative z-10 reveal">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20">
 
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col">
-                <div class="relative overflow-hidden h-52">
-                    <img src="assets/Company Profile.webp" width="900" height="507" loading="lazy" decoding="async" alt="Screenshot Web Company Profile Jok Motor" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex-grow">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Web Company Profile</h3>
-                    <p class="text-slate-500 text-sm mb-6">Website profil bisnis profesional untuk toko Jok Motor (Leather Shop) dengan desain elegan.</p>
-                    <a href="https://igustiagung0512.github.io/Profile-Company-Jok-Motor/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/link">
-                        Lihat Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col">
-                <div class="relative overflow-hidden h-52">
-                    <img src="assets/Todolist.webp" width="900" height="507" loading="lazy" decoding="async" alt="Screenshot Web To-Do List" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex-grow">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">Web To-Do List</h3>
-                    <p class="text-slate-500 text-sm mb-6">Aplikasi manajemen tugas harian yang memanfaatkan LocalStorage untuk penyimpanan data tetap.</p>
-                    <a href="https://igustiagung0512.github.io/To-do-list/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/link">
-                        Lihat Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col">
-                <div class="relative overflow-hidden h-52">
-                    <img src="assets/Kalkulator.webp" width="900" height="507" loading="lazy" decoding="async" alt="Screenshot Web Kalkulator" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex-grow">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors">Digital Calculator</h3>
-                    <p class="text-slate-500 text-sm mb-6">Alat bantu hitung matematis dengan antarmuka bersih dan logika JavaScript murni.</p>
-                    <a href="https://igustiagung0512.github.io/Kalkulator/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/link">
-                        Lihat Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col">
-                <div class="relative overflow-hidden h-52">
-                    <img src="assets/Navbar.webp" width="900" height="507" loading="lazy" decoding="async" alt="Screenshot Responsive Navbar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex-grow">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-green-600 transition-colors">Responsive Navbar</h3>
-                    <p class="text-slate-500 text-sm mb-6">Implementasi menu navigasi yang adaptif dan ramah pengguna di semua ukuran layar.</p>
-                    <a href="https://igustiagung0512.github.io/Navbar-Responsif/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/link">
-                        Lihat Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col">
-                <div class="relative overflow-hidden h-52">
-                    <img src="assets/Darklight.webp" width="900" height="507" loading="lazy" decoding="async" alt="Screenshot Dark Mode Switcher" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex-grow">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-yellow-500 transition-colors">Dark Mode Switcher</h3>
-                    <p class="text-slate-500 text-sm mb-6">Fitur pengubah tema tampilan otomatis untuk meningkatkan pengalaman visual pengguna.</p>
-                    <a href="https://igustiagung0512.github.io/Dark-Light-Mode/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/link">
-                        Lihat Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col">
-                <div class="relative overflow-hidden h-52">
-                    <img src="assets/Screenshot (1349).webp" width="900" height="507" loading="lazy" decoding="async" alt="Screenshot Retro Snake Game" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex-grow">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-red-600 transition-colors">Retro Snake Game</h3>
-                    <p class="text-slate-500 text-sm mb-6">Game klasik interaktif yang dikembangkan menggunakan HTML5 Canvas API.</p>
-                    <a href="https://igustiagung0512.github.io/Retro-Snake-Game/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/link">
-                        Lihat Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col">
-                <div class="relative overflow-hidden h-52">
-                    <img src="assets/Contact.webp" width="900" height="507" loading="lazy" decoding="async" alt="Screenshot Responsive Contact Form" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="p-6 flex-grow">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-cyan-600 transition-colors">Responsive Contact Form</h3>
-                    <p class="text-slate-500 text-sm mb-6">Halaman formulir kontak yang responsif dengan sistem validasi input data.</p>
-                    <a href="https://igustiagung0512.github.io/Contact-Form/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm group/link">
-                        Lihat Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-700 flex flex-col justify-center p-8 relative">
-                    <i class="fa-brands fa-github absolute -bottom-10 -right-10 text-9xl text-white/5 group-hover:text-white/10 transition-all duration-500" aria-hidden="true"></i>
-    
-                <div class="relative z-10">
-                 <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6">
-                     <i class="fa-brands fa-github text-2xl text-white" aria-hidden="true"></i>
-                 </div>
-        
-                    <h3 class="text-2xl font-bold text-white mb-4">Tertarik melihat balik layar?</h3>
-        
-                    <p class="text-slate-400 text-sm mb-8 leading-relaxed">
-                      Semua proyek di atas bersifat open-source. Silakan mampir ke GitHub saya untuk melihat detail kodingan, struktur folder, dan dokumentasi lengkapnya.
-                    </p>
-        
-                    <a href="https://github.com/IgustiAgung0512" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-xl font-bold text-sm hover:bg-blue-500 hover:text-white transition-all transform active:scale-95">
-                     Kunjungi GitHub Saya <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                     </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="contact" class="py-24 bg-white relative overflow-hidden">
-    <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[500px] h-[500px] bg-blue-50 rounded-full blur-[120px] opacity-60"></div>
-    <div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-[500px] h-[500px] bg-indigo-50 rounded-full blur-[120px] opacity-60"></div>
-
-    <div class="container mx-auto px-6 reveal">
-        <div class="max-w-5xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                
-                <div class="text-center lg:text-left">
-                    <div class="inline-block px-4 py-1.5 bg-blue-100 rounded-full mb-6">
-                        <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
-                    </div>
-                    <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
-                        Siap Memulai <span class="text-blue-600">Proyek Baru?</span>
-                    </h2>
-                    <p class="text-slate-500 text-lg mb-8 leading-relaxed">
-                        Jangan biarkan ide hebat Anda hanya menjadi rencana. Mari berdiskusi dan ubah ide tersebut menjadi solusi digital yang nyata.
-                    </p>
-                    
-                    <div class="flex flex-col gap-4 items-center lg:items-start">
-                        <div class="flex items-center gap-4 text-slate-600 font-medium">
-                            <div class="w-10 h-10 bg-white shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-blue-600">
-                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <div class="relative group">
+                            <div
+                                class="absolute -top-4 -left-4 w-full h-full border-2 border-blue-400 rounded-3xl rotate-3 group-hover:rotate-0 transition-transform duration-500">
                             </div>
-                            <span>Bogor, Indonesia</span>
-                        </div>
-                        <div class="flex items-center gap-4 text-slate-600 font-medium">
-                            <div class="w-10 h-10 bg-white shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-green-500">
-                                <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                            <div
+                                class="relative w-60 h-80 md:w-72 md:h-96 overflow-hidden rounded-3xl shadow-xl bg-white p-2">
+                                <img src="assets/luck.webp" width="467" height="700" loading="lazy" decoding="async"
+                                    alt="Foto About I Gusti Agung Ketut Agung"
+                                    class="w-full h-full object-cover rounded-2xl">
                             </div>
-                            <span>Tersedia untuk Freelance</span>
                         </div>
                     </div>
-                </div>
 
-                <div class="relative">
-                    <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-[2.5rem] p-6 md:p-12 shadow-2xl shadow-blue-200 relative z-10 overflow-hidden group">
-                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-all duration-500"></div>
-                        
-                        <h3 class="text-2xl font-bold text-white mb-8">Hubungi Saya Sekarang</h3>
-                        
-                        <div class="space-y-4">
-                            <a href="https://wa.me/6289524254219" target="_blank" rel="noopener"
-                               class="flex items-center justify-between bg-white p-4 md:p-5 rounded-2xl group/btn hover:bg-blue-50 transition-all transform hover:-translate-y-1 overflow-hidden">
-                                <div class="flex items-center gap-3 md:gap-4 overflow-hidden w-full">
-                                    <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-lg md:text-xl">
-                                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="text-left overflow-hidden">
-                                        <p class="text-[10px] text-slate-500 font-bold uppercase">WhatsApp</p>
-                                        <p class="text-slate-900 font-bold text-sm md:text-base">+62 895 2425 4219</p>
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-arrow-right text-slate-300 group-hover/btn:text-blue-600 group-hover/btn:translate-x-2 transition-all flex-shrink-0" aria-hidden="true"></i>
-                            </a>
-
-                            <a href="mailto:igustiagung00@gmail.com" 
-                               class="flex items-center justify-between bg-white/10 border border-white/20 p-4 md:p-5 rounded-2xl group/btn hover:bg-white/20 transition-all transform hover:-translate-y-1 overflow-hidden">
-                                <div class="flex items-center gap-3 md:gap-4 overflow-hidden w-full">
-                                    <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white/20 text-white rounded-xl flex items-center justify-center text-lg md:text-xl">
-                                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="text-left overflow-hidden">
-                                        <p class="text-[10px] text-blue-100 font-bold uppercase">Email Me</p>
-                                        <p class="text-white font-bold text-sm md:text-base break-all leading-tight">igustiagung00@gmail.com</p>
-                                    </div>
-                                </div>
-                                <i class="fa-solid fa-arrow-right text-white/30 group-hover/btn:text-white group-hover/btn:translate-x-2 transition-all flex-shrink-0" aria-hidden="true"></i>
-                            </a>
+                    <div class="w-full md:w-2/3 space-y-6">
+                        <div class="inline-block px-4 py-1.5 bg-blue-50 rounded-full border border-blue-100">
+                            <p class="text-xs font-bold text-blue-600 uppercase tracking-widest">About Me</p>
                         </div>
-
-                        <p class="text-blue-50 text-[10px] text-center mt-8 font-medium tracking-widest uppercase">
-                            Respon cepat dalam 24 jam
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-[1.2]">
+                            Solusi Terintegrasi: <span class="text-blue-600">Teknologi Informasi</span> & <span
+                                class="text-blue-600">Manajemen Bisnis</span>
+                        </h2>
+                        <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+                            Saya <strong>I Gusti Agung Ketut Agung, S.Kom</strong>, lulusan Sarjana Sistem Informasi
+                            dari <strong>Universitas Putra Indonesia YPTK Padang (IPK 3,68 — Predikat
+                                Cumlaude)</strong>. Saya memiliki spektrum keahlian yang fleksibel dan berorientasi
+                            hasil: mulai dari pengembangan website & analisis sistem, pengelolaan administrasi SDM (HR),
+                            pelaporan keuangan e-commerce multi-channel, hingga negosiasi kemitraan bisnis.
                         </p>
-                    </div>
 
-                    <div class="absolute -bottom-4 -right-4 w-full h-full bg-blue-100 rounded-[2.5rem] -z-0 hidden md:block"></div>
+                        <!-- Academic Honors Card -->
+                        <div class="about-honors-card">
+                            <div class="about-honors-info">
+                                <div class="about-honors-icon">
+                                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-slate-900 text-sm md:text-base">S1 Sistem Informasi (IPK
+                                        3,68 — Cumlaude)</p>
+                                    <p class="text-slate-500 text-xs">Universitas Putra Indonesia YPTK Padang (2019 -
+                                        2023)</p>
+                                </div>
+                            </div>
+                            <div class="about-honors-badges">
+                                <span class="about-honor-pill">
+                                    <i class="fa-solid fa-award text-yellow-500" aria-hidden="true"></i> Beasiswa
+                                    Prestasi
+                                </span>
+                                <span class="about-honor-pill">
+                                    <i class="fa-solid fa-trophy text-yellow-500" aria-hidden="true"></i> Juara Kelas
+                                    Sem 6, 2, 5
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 3-Column Structured Skills Cards -->
+                        <div class="about-skills-grid">
+
+                            <!-- Card 1: IT & Development -->
+                            <div class="about-skill-card">
+                                <div class="about-skill-card-header">
+                                    <i class="fa-solid fa-code text-blue-600 text-sm" aria-hidden="true"></i>
+                                    <span>IT & Development</span>
+                                </div>
+                                <div class="about-skill-badge-group">
+                                    <span class="about-badge"><i class="fa-brands fa-html5 text-[#E34F26]"></i>
+                                        HTML/CSS</span>
+                                    <span class="about-badge"><i class="fa-brands fa-js text-[#F7DF1E]"></i>
+                                        JavaScript</span>
+                                    <span class="about-badge"><i class="fa-solid fa-wind text-[#06B6D4]"></i>
+                                        Tailwind</span>
+                                    <span class="about-badge"><i class="fa-brands fa-laravel text-[#FF2D20]"></i> PHP &
+                                        Laravel</span>
+                                    <span class="about-badge"><i class="fa-brands fa-react text-[#61DAFB]"></i> React
+                                        JS</span>
+                                    <span class="about-badge"><i class="fa-solid fa-database text-blue-600"></i>
+                                        MySQL</span>
+                                    <span class="about-badge"><i
+                                            class="fa-solid fa-diagram-project text-indigo-600"></i> System
+                                        Analyst</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Business & Operations -->
+                            <div class="about-skill-card">
+                                <div class="about-skill-card-header">
+                                    <i class="fa-solid fa-briefcase text-emerald-600 text-sm" aria-hidden="true"></i>
+                                    <span>Business & Operations</span>
+                                </div>
+                                <div class="about-skill-badge-group">
+                                    <span class="about-badge"><i class="fa-solid fa-users-gear text-purple-600"></i>
+                                        Staff SDM / HR</span>
+                                    <span class="about-badge"><i
+                                            class="fa-solid fa-file-invoice-dollar text-emerald-600"></i> Finance
+                                        Report</span>
+                                    <span class="about-badge"><i class="fa-solid fa-cart-shopping text-orange-500"></i>
+                                        E-Commerce Admin</span>
+                                    <span class="about-badge"><i class="fa-solid fa-handshake text-blue-600"></i>
+                                        Business Partner</span>
+                                    <span class="about-badge"><i class="fa-solid fa-file-excel text-green-600"></i> MS
+                                        Excel (Data)</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Core Competencies -->
+                            <div class="about-skill-card">
+                                <div class="about-skill-card-header">
+                                    <i class="fa-solid fa-wand-magic-sparkles text-purple-600 text-sm"
+                                        aria-hidden="true"></i>
+                                    <span>Core Competencies</span>
+                                </div>
+                                <div class="about-skill-badge-group">
+                                    <span class="about-badge"><i class="fa-brands fa-figma text-[#F24E1E]"></i>
+                                        Figma</span>
+                                    <span class="about-badge"><i class="fa-brands fa-github text-slate-900"></i>
+                                        Git/GitHub</span>
+                                    <span class="about-badge"><i class="fa-solid fa-comments text-pink-500"></i>
+                                        Communication</span>
+                                    <span class="about-badge"><i class="fa-solid fa-lightbulb text-amber-500"></i>
+                                        Problem Solving</span>
+                                    <span class="about-badge"><i class="fa-solid fa-people-group text-cyan-600"></i>
+                                        Leadership</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: EXPERIENCE & CAREER JOURNEY -->
+        <section id="experience" class="py-24 bg-slate-50 relative border-t border-slate-200/60">
+            <div class="container mx-auto px-6 reveal">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="inline-block px-4 py-1.5 bg-blue-100 rounded-full mb-3">
+                        <p class="text-xs font-bold text-blue-600 uppercase tracking-widest">Career Journey</p>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">Pengalaman Kerja &
+                        Profesional</h2>
+                    <p class="text-slate-600 mt-4 text-base md:text-lg">Rekam jejak pengalaman nyata di bidang
+                        operasional SDM (HR), administrasi keuangan e-commerce, kemitraan bisnis, dan pengembangan
+                        sistem informasi.</p>
                 </div>
 
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
+                    <!-- Experience 1: Staff SDM -->
+                    <div
+                        class="timeline-card bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl flex flex-col justify-between relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-purple-50 rounded-bl-full -z-0 group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="relative z-10 space-y-4">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <span
+                                    class="px-3 py-1 bg-purple-50 text-purple-700 text-xs font-bold rounded-full border border-purple-100 uppercase tracking-wider">
+                                    <i class="fa-solid fa-users-gear mr-1"></i> HR & Operations
+                                </span>
+                                <span class="text-xs font-semibold text-slate-400 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-calendar text-slate-300"></i> Jan 2026 - Mar 2026
+                                </span>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                                    Staff SDM</h3>
+                                <p class="text-blue-600 font-semibold text-sm">King Corporation</p>
+                            </div>
+
+                            <ul class="space-y-2.5 text-slate-600 text-sm leading-relaxed">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Mengelola dan merekap seluruh berkas karyawan aktif, dokumen administrasi, dan
+                                        pembaruan data personal.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Merekap dan mengelola data pelamar melalui aplikasi lowongan kerja (Loker)
+                                        serta proses screening awal kandidat.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Menyusun, mengatur, dan mengoordinasikan jadwal interview antara kandidat dan
+                                        user.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Merekapitulasi absensi karyawan secara berkala sebagai dasar penggajian
+                                        *(payroll)* dan evaluasi kehadiran.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Menghitung jam lembur dan memantau kelancaran operasional harian
+                                        perusahaan.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2: Admin Keuangan Freelance -->
+                    <div
+                        class="timeline-card bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl flex flex-col justify-between relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-bl-full -z-0 group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="relative z-10 space-y-4">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <span
+                                    class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full border border-emerald-100 uppercase tracking-wider">
+                                    <i class="fa-solid fa-file-invoice-dollar mr-1"></i> Finance & Marketplace
+                                </span>
+                                <span
+                                    class="text-xs font-semibold text-emerald-600 bg-emerald-50/80 px-2.5 py-0.5 rounded-full flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span> Jul 2025
+                                    - Sekarang
+                                </span>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                                    Admin Keuangan (Freelance)</h3>
+                                <p class="text-blue-600 font-semibold text-sm">Multi-Channel E-Commerce Store</p>
+                            </div>
+
+                            <ul class="space-y-2.5 text-slate-600 text-sm leading-relaxed">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Menyusun laporan mingguan dan bulanan omzet pada platform Shopee, Tokopedia,
+                                        TikTok Shop, dan Lazada untuk 4 cabang.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Menginput dan merekap data penjualan per produk secara sistematis menggunakan
+                                        Microsoft Excel.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Menganalisis total omzet dan jumlah kuantitas produk terjual untuk evaluasi
+                                        performa bisnis toko.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3: Business Partner -->
+                    <div
+                        class="timeline-card bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl flex flex-col justify-between relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full -z-0 group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="relative z-10 space-y-4">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <span
+                                    class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-full border border-blue-100 uppercase tracking-wider">
+                                    <i class="fa-solid fa-handshake mr-1"></i> Business Partnership
+                                </span>
+                                <span class="text-xs font-semibold text-slate-400 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-calendar text-slate-300"></i> Jul 2023 - Jun 2025
+                                </span>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                                    Business Partner</h3>
+                                <p class="text-blue-600 font-semibold text-sm">PT. Amartha Micro Fintek</p>
+                            </div>
+
+                            <ul class="space-y-2.5 text-slate-600 text-sm leading-relaxed">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Mendampingi dan melayani lebih dari 50 mitra PT Amartha Micro Fintek setiap
+                                        harinya.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Berhasil merekrut dan mengakuisisi lebih dari 100 mitra baru selama masa
+                                        kerja.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Meningkatkan kolaborasi antar mitra yang berdampak langsung pada peningkatan
+                                        pendapatan dan efisiensi klien.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Melakukan negosiasi kesepakatan dan evaluasi kinerja guna meningkatkan inklusi
+                                        keuangan masyarakat.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 4: SPK Developer -->
+                    <div
+                        class="timeline-card bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl flex flex-col justify-between relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-bl-full -z-0 group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="relative z-10 space-y-4">
+                            <div class="flex flex-wrap items-center justify-between gap-2">
+                                <span
+                                    class="px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-full border border-indigo-100 uppercase tracking-wider">
+                                    <i class="fa-solid fa-code-branch mr-1"></i> IT & System Development
+                                </span>
+                                <span class="text-xs font-semibold text-slate-400 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-calendar text-slate-300"></i> Mar 2022 - Jun 2022
+                                </span>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                                    Pengembang Sistem Pendukung Keputusan</h3>
+                                <p class="text-blue-600 font-semibold text-sm">Posyandu Kemboja VI</p>
+                            </div>
+
+                            <ul class="space-y-2.5 text-slate-600 text-sm leading-relaxed">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Bertanggung jawab atas pembuatan dan pengembangan sistem pendukung keputusan
+                                        (SPK) penilaian status gizi balita berbasis web dengan metode EDAS.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Mengelola input data wali serta data antropometri balita (umur, berat dan
+                                        tinggi badan).</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-blue-500 text-xs mt-1 flex-shrink-0"></i>
+                                    <span>Memastikan sistem yang dibangun berjalan dengan stabil, akurat, dan mudah
+                                        digunakan oleh kader posyandu.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CERTIFICATIONS & CREDENTIALS -->
+        <section id="certificates" class="py-24 bg-white relative border-t border-slate-100">
+            <div class="container mx-auto px-6 reveal">
+                <div class="text-center mb-16">
+                    <div class="inline-block px-5 py-2 bg-blue-100 rounded-full mb-4">
+                        <p class="text-sm font-bold text-blue-600 uppercase tracking-widest">Certifications &
+                            Credentials</p>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-slate-900">Sertifikasi & Kredensial</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">Sertifikasi keahlian terverifikasi dan kredensial
+                        akademik resmi yang memperkuat kompetensi teknis dan profesional.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Certificate 1: Harisenin.com Laravel -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col cursor-pointer"
+                        onclick="openCertModal('assets/Certificate_Coding_Camp_Laravel.jpg', 'Coding Camp Laravel Class', 'Harisenin.com (RISE)', 'Participant Certificate • PHP & Laravel MVC Backend', 'fa-brands fa-laravel', 'bg-red-600', 'assets/certificate-harisenin-laravel.pdf')">
+                        <div class="cert-preview-frame">
+                            <img src="assets/Certificate_Coding_Camp_Laravel.jpg" width="900" height="507"
+                                loading="lazy" decoding="async" alt="Sertifikat Coding Camp Laravel Class Harisenin">
+                            <div class="cert-badge-tag badge-verified">
+                                <i class="fa-solid fa-circle-check"></i> Verified
+                            </div>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span
+                                        class="w-6 h-6 rounded-lg bg-red-50 text-red-600 flex items-center justify-center text-xs">
+                                        <i class="fa-brands fa-laravel"></i>
+                                    </span>
+                                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Harisenin.com
+                                        (RISE)</span>
+                                </div>
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                                    Coding Camp Laravel Class</h3>
+                                <p class="text-slate-500 text-sm mb-4">Pelatihan intensif arsitektur MVC, pengembangan
+                                    backend PHP & Laravel, relasi database MySQL, dan RESTful API.</p>
+                            </div>
+                            <div class="cert-card-footer">
+                                <span class="text-slate-400 font-medium truncate max-w-[130px]"
+                                    title="Kezia B. Manege, M.Sc.">Kezia B. Manege, M.Sc.</span>
+                                <a href="assets/certificate-harisenin-laravel.pdf" target="_blank"
+                                    rel="noopener noreferrer" onclick="event.stopPropagation()"
+                                    class="btn-cert-action cert-btn-laravel"
+                                    title="Buka Dokumen PDF Resmi di Tab Baru">
+                                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                                    <span>Buka PDF</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2: RevoU Intro to Software Engineering -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col cursor-pointer"
+                        onclick="openCertModal('assets/Sertifikat_Revou.jpg', 'Intro to Software Engineering', 'RevoU (PT Revolusi Cita Edukasi)', 'Credential ID: CCSE 050126-01-1-00149 • 9 Jan 2026', 'fa-solid fa-code', 'bg-purple-600', 'assets/certificate-revou-se.pdf')">
+                        <div class="cert-preview-frame">
+                            <img src="assets/Sertifikat_Revou.jpg" width="900" height="507" loading="lazy"
+                                decoding="async" alt="Sertifikat Intro to Software Engineering RevoU">
+                            <div class="cert-badge-tag badge-certified">
+                                <i class="fa-solid fa-certificate"></i> Certified
+                            </div>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span
+                                        class="w-6 h-6 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-xs">
+                                        <i class="fa-solid fa-code"></i>
+                                    </span>
+                                    <span
+                                        class="text-xs font-bold text-purple-600 uppercase tracking-wider">RevoU</span>
+                                </div>
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">
+                                    Intro to Software Engineering</h3>
+                                <p class="text-slate-500 text-sm mb-4">Program mencakup dasar-dasar Software
+                                    Engineering, computational thinking, workflow aplikasi web, dan algoritma.</p>
+                            </div>
+                            <div class="cert-card-footer">
+                                <span class="text-slate-400 font-mono text-[11px] truncate max-w-[130px]"
+                                    title="CCSE 050126-01-1-00149">CCSE 050126-01-1</span>
+                                <a href="assets/certificate-revou-se.pdf" target="_blank" rel="noopener noreferrer"
+                                    onclick="event.stopPropagation()"
+                                    class="btn-cert-action cert-btn-revou"
+                                    title="Buka Dokumen PDF Resmi di Tab Baru">
+                                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                                    <span>Buka PDF</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3: Academic Degree UPI YPTK Padang -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col cursor-pointer"
+                        onclick="openCertModal('assets/Ijazah_I_Gusti_Agung_Ketut_Agung (1).jpg', 'Sarjana Komputer (S.Kom) - Cum Laude', 'Universitas Putra Indonesia YPTK Padang', 'Predikat Cum Laude • IPK 3,68 / 4.00 • Juara Kelas & Beasiswa', 'fa-solid fa-graduation-cap', 'bg-amber-500')">
+                        <div class="cert-preview-frame">
+                            <img src="assets/Ijazah_I_Gusti_Agung_Ketut_Agung (1).jpg" width="900" height="507"
+                                loading="lazy" decoding="async" alt="Ijazah S1 Sistem Informasi UPI YPTK Padang">
+                            <div class="cert-badge-tag badge-cumlaude">
+                                <i class="fa-solid fa-award"></i> Cum Laude
+                            </div>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span
+                                        class="w-6 h-6 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center text-xs">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </span>
+                                    <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">UPI YPTK
+                                        Padang</span>
+                                </div>
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-600 transition-colors">
+                                    S1 Sistem Informasi (S.Kom)</h3>
+                                <p class="text-slate-500 text-sm mb-4">Lulusan IPK 3,68 (Cumlaude), Piagam Juara Kelas
+                                    (Semester 6, 2, 5), dan penerima Beasiswa Prestasi universitas.</p>
+                            </div>
+                            <div class="cert-card-footer">
+                                <span class="text-slate-400 font-medium truncate max-w-[130px]"
+                                    title="IPK 3,68 / 4.00 (Cumlaude)">IPK 3,68 (Cumlaude)</span>
+                                <button type="button"
+                                    onclick="openCertModal('assets/Ijazah_I_Gusti_Agung_Ketut_Agung (1).jpg', 'Sarjana Komputer (S.Kom) - Cum Laude', 'Universitas Putra Indonesia YPTK Padang', 'Predikat Cum Laude • IPK 3,68 / 4.00 • Juara Kelas & Beasiswa', 'fa-solid fa-graduation-cap', 'bg-amber-500'); event.stopPropagation();"
+                                    class="btn-cert-action cert-btn-cumlaude"
+                                    title="Buka Pratinjau Ijazah Resmi">
+                                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                                    <span>Buka Ijazah</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="project" class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6 reveal">
+                <div class="text-center mb-16">
+                    <div class="inline-block px-5 py-2 bg-blue-100 rounded-full mb-4">
+                        <p class="text-sm font-bold text-blue-600 uppercase tracking-widest">My Portfolio</p>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-slate-900">Featured Projects</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">Kumpulan solusi digital yang saya kembangkan, mulai
+                        dari aplikasi interaktif hingga pengembangan landing page profesional.</p>
+                </div>
+
+                <!-- Interactive Category Filter Tabs -->
+                <div class="project-filter-container">
+                    <button type="button" class="project-filter-btn active" data-filter="all">
+                        <i class="fa-solid fa-layer-group"></i> <span>Semua Proyek</span>
+                    </button>
+                    <button type="button" class="project-filter-btn" data-filter="web">
+                        <i class="fa-solid fa-globe"></i> <span>Web & Landing Page</span>
+                    </button>
+                    <button type="button" class="project-filter-btn" data-filter="app">
+                        <i class="fa-solid fa-laptop-code"></i> <span>Web Apps</span>
+                    </button>
+                    <button type="button" class="project-filter-btn" data-filter="interactive">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Interactive & UI</span>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1: Personal Web Portfolio -->
+                    <div class="project-card-item group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col justify-between"
+                        data-category="web">
+                        <div>
+                            <div class="relative overflow-hidden h-52">
+                                <img src="assets/WebPortfolio.webp" width="900" height="507" loading="lazy" decoding="async"
+                                    alt="Screenshot Personal Web Portfolio"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div
+                                    class="absolute top-4 right-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-md">
+                                    Current Site</div>
+                            </div>
+                            <div class="p-6 pb-2">
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                                    Personal Web Portfolio</h3>
+                                <p class="text-slate-500 text-sm mb-4">Website portfolio interaktif yang sedang Anda
+                                    jelajahi, dibangun dengan fokus pada estetika, micro-animations, dan performa tinggi.</p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="project-tech-tag"><i class="fa-brands fa-html5 text-orange-500"></i> HTML5</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-css3-alt text-blue-500"></i> Tailwind</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-js text-yellow-500"></i> Vanilla JS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-actions">
+                            <a href="https://igustiagung0512.github.io/PortfolioIgustiAgungKetutAgung/" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-demo" title="Buka Demo Langsung">
+                                <span>Lihat Demo</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/IgustiAgung0512/PortfolioIgustiAgungKetutAgung" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-code" title="Lihat Source Code di GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Web Company Profile -->
+                    <div class="project-card-item group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col justify-between"
+                        data-category="web">
+                        <div>
+                            <div class="relative overflow-hidden h-52">
+                                <img src="assets/Company Profile.webp" width="900" height="507" loading="lazy"
+                                    decoding="async" alt="Screenshot Web Company Profile Jok Motor"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="p-6 pb-2">
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                                    Web Company Profile</h3>
+                                <p class="text-slate-500 text-sm mb-4">Website profil bisnis profesional untuk toko Jok
+                                    Motor (Leather Shop) dengan tata letak elegan dan responsif.</p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="project-tech-tag"><i class="fa-brands fa-html5 text-orange-500"></i> HTML5</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-css3-alt text-blue-500"></i> CSS3</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-js text-yellow-500"></i> JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-actions">
+                            <a href="https://igustiagung0512.github.io/Profile-Company-Jok-Motor/" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-demo" title="Buka Demo Langsung">
+                                <span>Lihat Demo</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/IgustiAgung0512/Profile-Company-Jok-Motor" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-code" title="Lihat Source Code di GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Web To-Do List -->
+                    <div class="project-card-item group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col justify-between"
+                        data-category="app">
+                        <div>
+                            <div class="relative overflow-hidden h-52">
+                                <img src="assets/Todolist.webp" width="900" height="507" loading="lazy" decoding="async"
+                                    alt="Screenshot Web To-Do List"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="p-6 pb-2">
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">
+                                    Web To-Do List</h3>
+                                <p class="text-slate-500 text-sm mb-4">Aplikasi manajemen tugas harian yang memanfaatkan
+                                    LocalStorage untuk penyimpanan data persisten tanpa database server.</p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="project-tech-tag"><i class="fa-brands fa-js text-yellow-500"></i> Vanilla JS</span>
+                                    <span class="project-tech-tag"><i class="fa-solid fa-database text-purple-500"></i> LocalStorage</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-css3-alt text-blue-500"></i> Modern UI</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-actions">
+                            <a href="https://igustiagung0512.github.io/To-do-list/" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-demo" title="Buka Demo Langsung">
+                                <span>Lihat Demo</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/IgustiAgung0512/To-do-list" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-code" title="Lihat Source Code di GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Digital Calculator -->
+                    <div class="project-card-item group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col justify-between"
+                        data-category="app">
+                        <div>
+                            <div class="relative overflow-hidden h-52">
+                                <img src="assets/Kalkulator.webp" width="900" height="507" loading="lazy" decoding="async"
+                                    alt="Screenshot Web Kalkulator"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="p-6 pb-2">
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors">
+                                    Digital Calculator</h3>
+                                <p class="text-slate-500 text-sm mb-4">Alat bantu hitung matematis dengan antarmuka bersih,
+                                    respons tombol instan, dan logika komputasi JavaScript murni.</p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="project-tech-tag"><i class="fa-solid fa-calculator text-blue-500"></i> Math Logic</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-js text-yellow-500"></i> Vanilla JS</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-css3-alt text-orange-500"></i> CSS Grid</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-actions">
+                            <a href="https://igustiagung0512.github.io/Kalkulator/" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-demo" title="Buka Demo Langsung">
+                                <span>Lihat Demo</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/IgustiAgung0512/Kalkulator" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-code" title="Lihat Source Code di GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Responsive Navbar -->
+                    <div class="project-card-item group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col justify-between"
+                        data-category="interactive">
+                        <div>
+                            <div class="relative overflow-hidden h-52">
+                                <img src="assets/Navbar.webp" width="900" height="507" loading="lazy" decoding="async"
+                                    alt="Screenshot Responsive Navbar"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="p-6 pb-2">
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-green-600 transition-colors">
+                                    Responsive Navbar</h3>
+                                <p class="text-slate-500 text-sm mb-4">Implementasi menu navigasi multi-perangkat yang adaptif
+                                    dengan transisi hamburger menu yang mulus.</p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="project-tech-tag"><i class="fa-solid fa-mobile-screen-button text-green-500"></i> Responsive UI</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-css3-alt text-blue-500"></i> CSS Animation</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-js text-yellow-500"></i> DOM Event</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-actions">
+                            <a href="https://igustiagung0512.github.io/Navbar-Responsif/" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-demo" title="Buka Demo Langsung">
+                                <span>Lihat Demo</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/IgustiAgung0512/Navbar-Responsif" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-code" title="Lihat Source Code di GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Dark Mode Switcher -->
+                    <div class="project-card-item group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col justify-between"
+                        data-category="interactive">
+                        <div>
+                            <div class="relative overflow-hidden h-52">
+                                <img src="assets/Darklight.webp" width="900" height="507" loading="lazy" decoding="async"
+                                    alt="Screenshot Dark Mode Switcher"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="p-6 pb-2">
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-yellow-500 transition-colors">
+                                    Dark Mode Switcher</h3>
+                                <p class="text-slate-500 text-sm mb-4">Fitur pengubah tema tampilan terang & gelap dengan
+                                    penyimpanan preferensi mode otomatis untuk kenyamanan mata.</p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="project-tech-tag"><i class="fa-solid fa-moon text-yellow-500"></i> Theme Engine</span>
+                                    <span class="project-tech-tag"><i class="fa-solid fa-database text-purple-500"></i> Storage</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-css3-alt text-blue-500"></i> CSS Variables</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-actions">
+                            <a href="https://igustiagung0512.github.io/Dark-Light-Mode/" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-demo" title="Buka Demo Langsung">
+                                <span>Lihat Demo</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/IgustiAgung0512/Dark-Light-Mode" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-code" title="Lihat Source Code di GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Retro Snake Game -->
+                    <div class="project-card-item group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col justify-between"
+                        data-category="interactive">
+                        <div>
+                            <div class="relative overflow-hidden h-52">
+                                <img src="assets/Screenshot (1349).webp" width="900" height="507" loading="lazy"
+                                    decoding="async" alt="Screenshot Retro Snake Game"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="p-6 pb-2">
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-red-600 transition-colors">
+                                    Retro Snake Game</h3>
+                                <p class="text-slate-500 text-sm mb-4">Game klasik interaktif dengan sistem deteksi
+                                    tabrakan, skor tertinggi, dan rendering HTML5 Canvas API.</p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="project-tech-tag"><i class="fa-solid fa-gamepad text-red-500"></i> Canvas API</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-js text-yellow-500"></i> Game Loop</span>
+                                    <span class="project-tech-tag"><i class="fa-solid fa-trophy text-amber-500"></i> Highscore</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-actions">
+                            <a href="https://igustiagung0512.github.io/Retro-Snake-Game/" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-demo" title="Buka Demo Langsung">
+                                <span>Lihat Demo</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/IgustiAgung0512/Retro-Snake-Game" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-code" title="Lihat Source Code di GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: Responsive Contact Form -->
+                    <div class="project-card-item group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col justify-between"
+                        data-category="interactive">
+                        <div>
+                            <div class="relative overflow-hidden h-52">
+                                <img src="assets/Contact.webp" width="900" height="507" loading="lazy" decoding="async"
+                                    alt="Screenshot Responsive Contact Form"
+                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            </div>
+                            <div class="p-6 pb-2">
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-2 group-hover:text-cyan-600 transition-colors">
+                                    Responsive Contact Form</h3>
+                                <p class="text-slate-500 text-sm mb-4">Halaman formulir kontak yang responsif dengan sistem
+                                    validasi input data dan umpan balik pengguna interaktif.</p>
+                                <div class="flex flex-wrap gap-1.5 mb-2">
+                                    <span class="project-tech-tag"><i class="fa-solid fa-envelope-circle-check text-cyan-500"></i> Form Validation</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-css3-alt text-blue-500"></i> CSS3 UI</span>
+                                    <span class="project-tech-tag"><i class="fa-brands fa-js text-yellow-500"></i> DOM Event</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-actions">
+                            <a href="https://igustiagung0512.github.io/Contact-Form/" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-demo" title="Buka Demo Langsung">
+                                <span>Lihat Demo</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/IgustiAgung0512/Contact-Form" target="_blank"
+                                rel="noopener noreferrer" class="btn-project-code" title="Lihat Source Code di GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Profile CTA Card (Always Visible) -->
+                    <div class="project-card-item group bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-700 flex flex-col justify-center p-8 relative"
+                        data-category="all">
+                        <i class="fa-brands fa-github absolute -bottom-10 -right-10 text-9xl text-white/5 group-hover:text-white/10 transition-all duration-500"
+                            aria-hidden="true"></i>
+
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6">
+                                <i class="fa-brands fa-github text-2xl text-white" aria-hidden="true"></i>
+                            </div>
+
+                            <h3 class="text-2xl font-bold text-white mb-4">Tertarik melihat balik layar?</h3>
+
+                            <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                                Semua proyek di atas bersifat open-source. Silakan mampir ke GitHub saya untuk melihat
+                                detail kodingan, struktur folder, dan dokumentasi lengkapnya.
+                            </p>
+
+                            <a href="https://github.com/IgustiAgung0512" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-xl font-bold text-sm hover:bg-blue-500 hover:text-white transition-all transform active:scale-95">
+                                Kunjungi GitHub Saya <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-24 bg-white relative overflow-hidden">
+            <div
+                class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[500px] h-[500px] bg-blue-50 rounded-full blur-[120px] opacity-60">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-[500px] h-[500px] bg-indigo-50 rounded-full blur-[120px] opacity-60">
+            </div>
+
+            <div class="container mx-auto px-6 reveal">
+                <div class="max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                        <div class="text-center lg:text-left">
+                            <div class="inline-block px-4 py-1.5 bg-blue-100 rounded-full mb-6">
+                                <span class="text-blue-600 text-xs font-bold uppercase tracking-widest">Get In
+                                    Touch</span>
+                            </div>
+                            <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
+                                Siap Memulai <span class="text-blue-600">Proyek Baru?</span>
+                            </h2>
+                            <p class="text-slate-500 text-lg mb-8 leading-relaxed">
+                                Jangan biarkan ide hebat Anda hanya menjadi rencana. Mari berdiskusi dan ubah ide
+                                tersebut menjadi solusi digital yang nyata.
+                            </p>
+
+                            <div class="flex flex-col gap-4 items-center lg:items-start">
+                                <div class="flex items-center gap-4 text-slate-600 font-medium">
+                                    <div
+                                        class="w-10 h-10 bg-white shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-blue-600">
+                                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                    </div>
+                                    <span>Bogor, Indonesia</span>
+                                </div>
+                                <div class="flex items-center gap-4 text-slate-600 font-medium">
+                                    <div
+                                        class="w-10 h-10 bg-white shadow-sm border border-slate-100 rounded-xl flex items-center justify-center text-green-500">
+                                        <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                                    </div>
+                                    <span>Tersedia untuk Freelance</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <div
+                                class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-[2.5rem] p-6 md:p-12 shadow-2xl shadow-blue-200 relative z-10 overflow-hidden group">
+                                <div
+                                    class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-all duration-500">
+                                </div>
+
+                                <h3 class="text-2xl font-bold text-white mb-8">Hubungi Saya Sekarang</h3>
+
+                                <div class="space-y-4">
+                                    <a href="https://wa.me/6289524254219?text=Halo%20I%20Gusti%20Agung,%20saya%20tertarik%20untuk%20berdiskusi%20mengenai%20proyek%20web."
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="flex items-center justify-between bg-white p-4 md:p-5 rounded-2xl group/btn hover:bg-blue-50 transition-all transform hover:-translate-y-1 overflow-hidden">
+                                        <div class="flex items-center gap-3 md:gap-4 overflow-hidden w-full">
+                                            <div
+                                                class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-lg md:text-xl">
+                                                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="text-left overflow-hidden">
+                                                <p class="text-[10px] text-slate-500 font-bold uppercase">WhatsApp</p>
+                                                <p class="text-slate-900 font-bold text-sm md:text-base">+62 895 2425
+                                                    4219</p>
+                                            </div>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right text-slate-300 group-hover/btn:text-blue-600 group-hover/btn:translate-x-2 transition-all flex-shrink-0"
+                                            aria-hidden="true"></i>
+                                    </a>
+
+                                    <div
+                                        class="flex items-center justify-between bg-white/10 border border-white/20 p-4 md:p-5 rounded-2xl group/btn hover:bg-white/20 transition-all transform hover:-translate-y-1 overflow-hidden">
+                                        <a href="mailto:igustiagung00@gmail.com"
+                                            class="flex items-center gap-3 md:gap-4 overflow-hidden flex-grow">
+                                            <div
+                                                class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-white/20 text-white rounded-xl flex items-center justify-center text-lg md:text-xl">
+                                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="text-left overflow-hidden">
+                                                <p class="text-[10px] text-blue-100 font-bold uppercase">Email Me</p>
+                                                <p
+                                                    class="text-white font-bold text-sm md:text-base break-all leading-tight">
+                                                    igustiagung00@gmail.com</p>
+                                            </div>
+                                        </a>
+                                        <button type="button"
+                                            onclick="copyToClipboard('igustiagung00@gmail.com', 'Alamat email berhasil disalin!')"
+                                            title="Salin Email" aria-label="Salin alamat email"
+                                            class="text-white/70 hover:text-white p-2 ml-2 hover:bg-white/10 rounded-lg transition-colors flex-shrink-0">
+                                            <i class="fa-solid fa-copy text-base" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <p
+                                    class="text-blue-50 text-[10px] text-center mt-8 font-medium tracking-widest uppercase">
+                                    Respon cepat dalam 24 jam
+                                </p>
+                            </div>
+
+                            <div
+                                class="absolute -bottom-4 -right-4 w-full h-full bg-blue-100 rounded-[2.5rem] -z-0 hidden md:block">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-50/50 pt-20 pb-10 border-t border-blue-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-10 mb-16">
+
+                <div class="max-w-full md:max-w-md">
+                    <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+                        <div
+                            class="flex-shrink-0 px-3 py-1 bg-blue-600 rounded-lg flex items-center justify-center shadow-md shadow-blue-200">
+                            <span class="text-white font-black text-sm tracking-tighter whitespace-nowrap">IGAKA</span>
+                        </div>
+
+                        <h3
+                            class="text-xl md:text-2xl font-black text-slate-900 tracking-tighter uppercase whitespace-nowrap">
+                            I Gusti Agung<span class="text-blue-600"> Ketut Agung</span><span
+                                class="text-xs text-slate-400 font-medium ml-1">, S.Kom</span>
+                        </h3>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed font-medium">
+                        Membantu organisasi dan bisnis berkembang melalui integrasi website modern, analisis sistem,
+                        serta administrasi operasional yang rapi dan efisien.
+                    </p>
+                </div>
+
+                <div class="footer-social-links">
+                    <a href="https://github.com/IgustiAgung0512" target="_blank" rel="noopener noreferrer"
+                        aria-label="Kunjungi GitHub"
+                        class="w-14 h-14 flex items-center justify-center bg-white text-slate-600 rounded-2xl shadow-sm hover:bg-slate-900 hover:text-white transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+                        <i class="fa-brands fa-github text-2xl" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/i-gusti-agung-ketut-agung-160415269" target="_blank"
+                        rel="noopener noreferrer" aria-label="Kunjungi LinkedIn"
+                        class="w-14 h-14 flex items-center justify-center bg-white text-blue-600 rounded-2xl shadow-sm hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+                        <i class="fa-brands fa-linkedin-in text-2xl" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/gusti_agung29" target="_blank" rel="noopener noreferrer"
+                        aria-label="Kunjungi Instagram"
+                        class="w-14 h-14 flex items-center justify-center bg-white text-pink-500 rounded-2xl shadow-sm hover:bg-pink-500 hover:text-white transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
+                        <i class="fa-brands fa-instagram text-2xl" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-8"></div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase tracking-widest">
+                    <p>© 2026 Developed</p>
+                    <p>by I Gusti Agung Ketut Agung, S.Kom</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="flex items-center gap-2 group">
+                        <i class="fa-brands fa-html5 text-orange-500 text-sm" aria-hidden="true"></i>
+                        <span
+                            class="text-[10px] font-black text-slate-500 group-hover:text-slate-900 transition-colors uppercase tracking-widest">HTML5</span>
+                    </div>
+                    <div class="flex items-center gap-2 group">
+                        <i class="fa-brands fa-css3-alt text-blue-500 text-sm" aria-hidden="true"></i>
+                        <span
+                            class="text-[10px] font-black text-slate-500 group-hover:text-slate-900 transition-colors uppercase tracking-widest">Tailwind</span>
+                    </div>
+                    <div class="flex items-center gap-2 group">
+                        <i class="fa-brands fa-js text-yellow-500 text-sm" aria-hidden="true"></i>
+                        <span
+                            class="text-[10px] font-black text-slate-500 group-hover:text-slate-900 transition-colors uppercase tracking-widest">JavaScript</span>
+                    </div>
+                    <div class="flex items-center gap-2 group">
+                        <i class="fa-brands fa-laravel text-red-500 text-sm" aria-hidden="true"></i>
+                        <span
+                            class="text-[10px] font-black text-slate-500 group-hover:text-slate-900 transition-colors uppercase tracking-widest">Laravel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CERTIFICATE MODAL LIGHTBOX -->
+    <div id="cert-modal" class="hidden" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title">
+        <!-- Floating Close Button (Always visible on top right) -->
+        <button type="button" onclick="closeCertModal()" class="modal-floating-close"
+            title="Kembali ke Portofolio (ESC)" aria-label="Tutup modal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div id="cert-modal-content">
+            <!-- Modal Header -->
+            <div class="cert-modal-header">
+                <div class="flex items-center gap-3 overflow-hidden">
+                    <div id="modal-cert-badge-icon"
+                        class="w-10 h-10 rounded-xl flex items-center justify-center text-white bg-blue-600 shadow-sm flex-shrink-0">
+                        <i class="fa-solid fa-award text-lg"></i>
+                    </div>
+                    <div class="overflow-hidden">
+                        <h3 id="modal-cert-title"
+                            class="text-base md:text-lg font-bold text-slate-900 leading-snug truncate">Judul Sertifikat
+                        </h3>
+                        <p id="modal-cert-issuer" class="text-xs text-slate-500 font-medium truncate">Penerbit
+                            Sertifikat</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 flex-shrink-0 ml-3">
+                    <a id="modal-cert-open-tab" href="#" target="_blank" rel="noopener noreferrer"
+                        class="px-3 py-2 rounded-xl text-slate-600 hover:text-blue-600 hover:bg-white border border-slate-200 transition-all text-xs font-semibold flex items-center gap-1.5"
+                        title="Buka di tab baru">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span class="hidden sm:inline">Buka Dokumen</span>
+                    </a>
+                    <button type="button" onclick="closeCertModal()" class="modal-close-btn" aria-label="Tutup modal"
+                        title="Kembali">
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Tutup</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Modal Body (Image preview) -->
+            <div class="cert-modal-body">
+                <img id="modal-cert-img" src="" alt="Pratinjau Sertifikat" loading="eager">
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="cert-modal-footer">
+                <span id="modal-cert-id"
+                    class="font-mono bg-slate-100 px-3 py-1.5 rounded-lg text-slate-700 text-[11px] md:text-xs">ID
+                    Kredensial Terverifikasi</span>
+                <div class="flex items-center gap-2">
+                    <a id="modal-cert-download" href="#" download
+                        class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all flex items-center gap-2 shadow-sm shadow-blue-200 text-xs">
+                        <i class="fa-solid fa-download"></i> Unduh
+                    </a>
+                    <button type="button" onclick="closeCertModal()"
+                        class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-bold transition-colors flex items-center gap-1.5 text-xs">
+                        <i class="fa-solid fa-arrow-left"></i> Kembali
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</section>
-<footer class="bg-blue-50/50 pt-20 pb-10 border-t border-blue-100">
-    <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-10 mb-16">
-            
-            <div class="max-w-full md:max-w-md">
-                <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
-                    <div class="flex-shrink-0 px-3 py-1 bg-blue-600 rounded-lg flex items-center justify-center shadow-md shadow-blue-200">
-                        <span class="text-white font-black text-sm tracking-tighter whitespace-nowrap">IGAKA</span>
-                    </div>
-                    
-                    <h3 class="text-xl md:text-2xl font-black text-slate-900 tracking-tighter uppercase whitespace-nowrap">
-                        I Gusti Agung<span class="text-blue-600"> Ketut Agung</span>
-                    </h3>
-                </div>
-                <p class="text-slate-500 text-sm leading-relaxed font-medium">
-                    Membantu bisnis membangun kehadiran digital yang kuat melalui website modern, interaktif, dan responsif.
-                </p>
-            </div>
-            
-            <div class="flex gap-4">
-                <a href="https://github.com/IgustiAgung0512" target="_blank" rel="noopener" aria-label="Kunjungi GitHub"
-                   class="w-14 h-14 flex items-center justify-center bg-white text-slate-600 rounded-2xl shadow-sm hover:bg-slate-900 hover:text-white transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
-                    <i class="fa-brands fa-github text-2xl" aria-hidden="true"></i>
-                </a>
-                <a href="https://linkedin.com/in/i-gusti-agung-ketut-agung" target="_blank" rel="noopener" aria-label="Kunjungi LinkedIn"
-                   class="w-14 h-14 flex items-center justify-center bg-white text-blue-600 rounded-2xl shadow-sm hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
-                    <i class="fa-brands fa-linkedin-in text-2xl" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.instagram.com/gusti_agung29" target="_blank" rel="noopener" aria-label="Kunjungi Instagram"
-                   class="w-14 h-14 flex items-center justify-center bg-white text-pink-500 rounded-2xl shadow-sm hover:bg-pink-500 hover:text-white transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl">
-                    <i class="fa-brands fa-instagram text-2xl" aria-hidden="true"></i>
-                </a>
-            </div>
-        </div>
-        
-        <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-blue-200 to-transparent mb-8"></div>
-        
-        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase tracking-widest">
-                <p>© 2026 Developed</p>
-                <p>by I Gusti Agung Ketut Agung</p>
-            </div>
-            
-            <div class="flex flex-wrap justify-center gap-6">
-                <div class="flex items-center gap-2 group">
-                    <i class="fa-brands fa-html5 text-orange-500 text-sm" aria-hidden="true"></i>
-                    <span class="text-[10px] font-black text-slate-500 group-hover:text-slate-900 transition-colors uppercase tracking-widest">HTML5</span>
-                </div>
-                <div class="flex items-center gap-2 group">
-                    <i class="fa-brands fa-css3-alt text-blue-500 text-sm" aria-hidden="true"></i>
-                    <span class="text-[10px] font-black text-slate-500 group-hover:text-slate-900 transition-colors uppercase tracking-widest">Tailwind</span>
-                </div>
-                <div class="flex items-center gap-2 group">
-                    <i class="fa-brands fa-js text-yellow-500 text-sm" aria-hidden="true"></i>
-                    <span class="text-[10px] font-black text-slate-500 group-hover:text-slate-900 transition-colors uppercase tracking-widest">JavaScript</span>
-                </div>
-            </div>
-        </div>
+
+    <!-- Back to Top Button -->
+    <a href="#home" id="back-to-top" aria-label="Kembali ke atas"
+        class="w-12 h-12 bg-blue-600 hover:bg-yellow-500 text-white rounded-2xl shadow-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 active:scale-95 group">
+        <i class="fa-solid fa-arrow-up transition-transform duration-300 group-hover:-translate-y-1"
+            aria-hidden="true"></i>
+    </a>
+
+    <!-- Toast Notification -->
+    <div id="toast" role="status" aria-live="polite"
+        class="bg-slate-900 text-white text-xs md:text-sm font-semibold px-5 py-3 rounded-2xl shadow-2xl border border-slate-700 flex items-center gap-3">
+        <i class="fa-solid fa-circle-check text-green-400 text-base" aria-hidden="true"></i>
+        <span id="toast-message">Berhasil disalin ke clipboard!</span>
     </div>
-</footer>
+
     <script src="script.js" defer></script>
 </body>
+
 </html>
