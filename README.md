@@ -45,6 +45,11 @@ Selamat datang di repositori resmi website portofolio interaktif **I Gusti Agung
 
 5. **Featured Projects dengan Filter Kategori**:
    * **Filter Kategori Dinamis**: Menyaring proyek berdasarkan *Semua Proyek*, *Web & Landing Page*, *Web Apps*, dan *Interactive & UI*.
+   * **Aplikasi Unggulan**:
+     * **MarketFee** (`Web Apps`): Kalkulator biaya admin & analisis laba bersih multi-marketplace (Shopee, Tokopedia, TikTok Shop, Lazada) dengan simulasi iklan dan komparasi 4 platform.
+     * **InvoiceMaster** (`Web Apps`): Generator faktur resmi, nota digital, dan struk kasir thermal (POS 80mm) dengan kalkulasi otomatis, live preview, tanda tangan digital, WhatsApp direct share, dan ekspor PDF.
+     * **Personal Web Portfolio** (`Web & Landing Page`): Portofolio interaktif responsif dengan micro-animations dan glassmorphism.
+     * **Web Company Profile**, **To-Do List**, **Digital Calculator**, **Retro Snake Game**, dll.
    * **Tech Stack Pills**: Badge teknologi yang digunakan pada masing-masing proyek.
    * **Dual Action Buttons**: Tombol *Lihat Demo* (Live Preview) dan *Source Code* (GitHub Repository) dengan efek mikro-animasi.
 
