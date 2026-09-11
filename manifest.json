@@ -1,0 +1,17 @@
+{
+  "name": "I Gusti Agung Ketut Agung - Portfolio",
+  "short_name": "IGAKA Portfolio",
+  "description": "Portfolio I Gusti Agung Ketut Agung, S.Kom — Web Development, System Analyst & Business Administration",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
