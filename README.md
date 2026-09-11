@@ -46,6 +46,7 @@ Selamat datang di repositori resmi website portofolio interaktif **I Gusti Agung
 5. **Featured Projects dengan Filter Kategori**:
    * **Filter Kategori Dinamis**: Menyaring proyek berdasarkan *Semua Proyek*, *Web & Landing Page*, *Web Apps*, dan *Interactive & UI*.
    * **Aplikasi Unggulan**:
+     * **GymPulse** (`Web Apps`): Aplikasi web pusat kebugaran modern terintegrasi teknologi Smart RFID tap-in, katalog fasilitas & program latihan, kalkulator BMI interaktif, pendaftaran membership, dan portal member.
      * **MarketFee** (`Web Apps`): Kalkulator biaya admin & analisis laba bersih multi-marketplace (Shopee, Tokopedia, TikTok Shop, Lazada) dengan simulasi iklan dan komparasi 4 platform.
      * **InvoiceMaster** (`Web Apps`): Generator faktur resmi, nota digital, dan struk kasir thermal (POS 80mm) dengan kalkulasi otomatis, live preview, tanda tangan digital, WhatsApp direct share, dan ekspor PDF.
      * **Personal Web Portfolio** (`Web & Landing Page`): Portofolio interaktif responsif dengan micro-animations dan glassmorphism.

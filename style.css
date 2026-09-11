@@ -665,6 +665,9 @@ html { scroll-behavior: smooth; }
 .group:hover .group-hover\:text-green-600 {
     color: #16a34a !important;
 }
+.group:hover .group-hover\:text-lime-600 {
+    color: #65a30d !important;
+}
 .group:hover .group-hover\:text-yellow-500 {
     color: #eab308 !important;
 }
@@ -918,6 +921,10 @@ html { scroll-behavior: smooth; }
 
 .project-card-item:hover .project-card-badge {
     transform: scale(1.05);
+}
+
+.project-card-badge.badge-gympulse {
+    background: linear-gradient(135deg, #15803d 0%, #65a30d 100%);
 }
 
 .project-card-badge.badge-marketfee {
