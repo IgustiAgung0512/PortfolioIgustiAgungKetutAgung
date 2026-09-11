@@ -154,7 +154,7 @@
     </header>
 
     <main id="main-content">
-        <section id="home" class="relative min-h-screen flex flex-col justify-center pt-28 md:pt-32 pb-16 overflow-hidden bg-white">
+        <section id="home" class="relative min-h-screen flex flex-col justify-start md:justify-center pt-24 sm:pt-28 md:pt-32 pb-16 overflow-hidden bg-white">
             <div class="absolute inset-0 z-0 pointer-events-none">
                 <div class="absolute -top-20 -left-20 w-[500px] h-[500px] bg-yellow-100/50 blur-[100px] rounded-full">
                 </div>
@@ -167,11 +167,9 @@
                 <div class="flex flex-col md:flex-row items-center justify-between gap-10 lg:gap-14">
                     <!-- Left Hero Text -->
                     <div class="w-full md:w-7/12 space-y-6 text-center md:text-left">
-                        <div
-                            class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 border border-blue-100 rounded-full">
-                            <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-                            <p class="text-blue-700 font-bold tracking-wider uppercase text-[11px]" data-i18n="hero_badge">Sistem Informasi • IT
-                                Development • Business Administration</p>
+                        <div class="hero-badge-pill">
+                            <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse flex-shrink-0"></span>
+                            <p data-i18n="hero_badge">Sistem Informasi • IT Development • Business Administration</p>
                         </div>
 
                         <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-[1.25]">
@@ -422,7 +420,7 @@
                                 </span>
                                 <span class="experience-date-badge">
                                     <i class="fa-solid fa-calendar-days text-purple-600" aria-hidden="true"></i>
-                                    <span>Jan 2026 - Mar 2026</span>
+                                    <span>Januari 2026 - Maret 2026</span>
                                 </span>
                             </div>
 
@@ -433,29 +431,30 @@
                                 <p class="exp-company-purple font-semibold text-sm">King Corporation</p>
                             </div>
 
-                            <ul class="space-y-2.5 text-slate-600 text-sm leading-relaxed">
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-purple text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Mengelola dan merekap seluruh berkas karyawan aktif, dokumen administrasi, dan
-                                        pembaruan data personal dengan 100% akurasi.</span>
+                            <ul class="space-y-3 text-slate-600 text-sm leading-relaxed">
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-purple"></span>
+                                    <span>Mengelola dan merekap seluruh berkas karyawan aktif, termasuk dokumen administrasi dan pembaruan data personal.</span>
                                 </li>
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-purple text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Merekap dan mengelola data pelamar melalui aplikasi lowongan kerja (Loker)
-                                        serta proses screening awal kandidat.</span>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-purple"></span>
+                                    <span>Merekap dan mengelola data pelamar melalui aplikasi lowongan kerja (Loker), termasuk proses screening awal.</span>
                                 </li>
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-purple text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Menyusun, mengatur, dan mengoordinasikan jadwal interview antara kandidat dan
-                                        user secara tepat waktu.</span>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-purple"></span>
+                                    <span>Menyusun, mengatur, dan mengoordinasikan jadwal interview antara kandidat dan user.</span>
                                 </li>
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-purple text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Merekapitulasi absensi berkala sebagai dasar penggajian *(payroll)* dan evaluasi kehadiran bebas komplain.</span>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-purple"></span>
+                                    <span>Merekapitulasi absensi karyawan secara berkala sebagai dasar penggajian dan evaluasi kehadiran.</span>
                                 </li>
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-purple text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Menghitung jam lembur dan memantau kelancaran operasional harian perusahaan.</span>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-purple"></span>
+                                    <span>Menghitung dan merekap jam lembur karyawan sesuai ketentuan perusahaan.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-purple"></span>
+                                    <span>Mengatur dan memantau kinerja operasional harian untuk memastikan efektivitas dan kelancaran aktivitas perusahaan.</span>
                                 </li>
                             </ul>
                         </div>
@@ -475,29 +474,29 @@
                                 </span>
                                 <span class="experience-date-badge">
                                     <i class="fa-solid fa-calendar-days text-emerald-600" aria-hidden="true"></i>
-                                    <span>2024 - 2025</span>
+                                    <span>Juli 2025 - Sekarang</span>
                                 </span>
                             </div>
 
                             <div>
                                 <h3
                                     class="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
-                                    Finance & Marketplace Administrator</h3>
-                                <p class="exp-company-emerald font-semibold text-sm">E-Commerce Merchant Store</p>
+                                    Admin Keuangan (Freelance)</h3>
+                                <p class="exp-company-emerald font-semibold text-sm">Freelance</p>
                             </div>
 
-                            <ul class="space-y-2.5 text-slate-600 text-sm leading-relaxed">
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-emerald text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Mengelola pencatatan arus kas harian dan rekonsiliasi data transaksi dari multi-channel marketplace (Shopee, Tokopedia, TikTok Shop).</span>
+                            <ul class="space-y-3 text-slate-600 text-sm leading-relaxed">
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-emerald"></span>
+                                    <span>Membuat laporan mingguan omzet pada Shopee, Tokopedia, TikTok Shop, dan Lazada untuk 4 cabang yang dikelola.</span>
                                 </li>
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-emerald text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Menyusun laporan laba rugi periodik dan memonitor struktur biaya admin platform untuk menjaga margin keuntungan optimal.</span>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-emerald"></span>
+                                    <span>Menginput data penjualan per produk pada platform Shopee, Tokopedia, TikTok Shop, dan Lazada menggunakan Excel.</span>
                                 </li>
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-emerald text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Mengoptimalkan workflow entri data menggunakan formula MS Excel lanjutan, memangkas waktu rekonsiliasi hingga 35%.</span>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-emerald"></span>
+                                    <span>Membuat laporan bulanan total omzet dan jumlah produk terjual untuk 4 cabang yang dikelola.</span>
                                 </li>
                             </ul>
                         </div>
@@ -517,25 +516,37 @@
                                 </span>
                                 <span class="experience-date-badge">
                                     <i class="fa-solid fa-calendar-days text-amber-600" aria-hidden="true"></i>
-                                    <span>2023 - 2024</span>
+                                    <span>Juli 2023 - Juni 2025</span>
                                 </span>
                             </div>
 
                             <div>
                                 <h3
                                     class="text-xl font-bold text-slate-900 group-hover:text-amber-600 transition-colors">
-                                    Business Development & Partner</h3>
-                                <p class="exp-company-amber font-semibold text-sm">Independent Business Venture</p>
+                                    Business Partner</h3>
+                                <p class="exp-company-amber font-semibold text-sm">PT. Amartha Micro Fintek</p>
                             </div>
 
-                            <ul class="space-y-2.5 text-slate-600 text-sm leading-relaxed">
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-amber text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Menjalin komunikasi strategis dengan vendor, mitra suplai, dan klien untuk memperluas jangkauan distribusi.</span>
+                            <ul class="space-y-3 text-slate-600 text-sm leading-relaxed">
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-amber"></span>
+                                    <span>Mendampingi dan melayani lebih dari 50 mitra PT Amartha Micro Fintek setiap harinya.</span>
                                 </li>
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-amber text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Melakukan negosiasi kesepakatan kerjasama dan menyusun SOP operasional kemitraan yang terstruktur.</span>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-amber"></span>
+                                    <span>Berhasil merekrut lebih dari 100 mitra baru selama masa kerja.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-amber"></span>
+                                    <span>Meningkatkan kolaborasi antar mitra yang berdampak pada peningkatan pendapatan dan efisiensi klien.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-amber"></span>
+                                    <span>Melakukan negosiasi untuk menciptakan kesepakatan yang saling menguntungkan.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-amber"></span>
+                                    <span>Terlibat dalam evaluasi kinerja mitra dan memastikan implementasi solusi keuangan yang optimal guna meningkatkan inklusi keuangan masyarakat.</span>
                                 </li>
                             </ul>
                         </div>
@@ -551,29 +562,33 @@
                             <div class="flex flex-wrap items-center justify-between gap-2">
                                 <span
                                     class="px-3 py-1 exp-badge-blue text-xs font-bold rounded-full uppercase tracking-wider">
-                                    <i class="fa-solid fa-laptop-code mr-1"></i> System Analyst & Web Dev
+                                    <i class="fa-solid fa-laptop-code mr-1"></i> System Development & IT
                                 </span>
                                 <span class="experience-date-badge">
                                     <i class="fa-solid fa-calendar-days text-blue-600" aria-hidden="true"></i>
-                                    <span>2023</span>
+                                    <span>Maret 2022 - Juni 2022</span>
                                 </span>
                             </div>
 
                             <div>
                                 <h3
                                     class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
-                                    System Analyst & Fullstack Developer</h3>
+                                    Pengembang Sistem Pendukung Keputusan</h3>
                                 <p class="exp-company-blue font-semibold text-sm">Posyandu Kemboja VI</p>
                             </div>
 
-                            <ul class="space-y-2.5 text-slate-600 text-sm leading-relaxed">
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-blue text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Merancang dan mengimplementasikan Sistem Pendukung Keputusan (SPK) status gizi balita berbasis web dengan algoritma EDAS.</span>
+                            <ul class="space-y-3 text-slate-600 text-sm leading-relaxed">
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-blue"></span>
+                                    <span>Bertanggung jawab atas pembuatan sistem pendukung keputusan gizi balita berbasis web.</span>
                                 </li>
-                                <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-check exp-check-blue text-xs mt-1 flex-shrink-0"></i>
-                                    <span>Mengelola database antropometri balita dan memastikan akurasi kalkulasi status gizi mencapai 100%.</span>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-blue"></span>
+                                    <span>Menginput data wali balita (nama, alamat) dan data balita (nama, umur, jenis kelamin, berat dan tinggi badan).</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="exp-bullet exp-bullet-blue"></span>
+                                    <span>Memastikan sistem yang dibangun berjalan dengan baik.</span>
                                 </li>
                             </ul>
                         </div>
@@ -1288,41 +1303,39 @@
                             <div class="space-y-3 pt-2">
                                 <a href="https://wa.me/6289524254219?text=Halo%20I%20Gusti%20Agung,%20saya%20tertarik%20untuk%20berdiskusi%20mengenai%20proyek%20web."
                                     target="_blank" rel="noopener noreferrer"
-                                    class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-2xl group/btn hover:border-green-400 hover:shadow-lg hover:shadow-green-100 transition-all transform hover:-translate-y-0.5 overflow-hidden">
-                                    <div class="flex items-center gap-3.5 overflow-hidden">
-                                        <div
-                                            class="flex-shrink-0 w-11 h-11 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-lg">
+                                    class="contact-card contact-card-wa">
+                                    <div class="flex items-center min-w-0 flex-1">
+                                        <div class="contact-card-icon-wrap wa">
                                             <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                                         </div>
-                                        <div class="text-left overflow-hidden">
-                                            <p class="text-[10px] text-slate-400 font-bold uppercase">WhatsApp Quick Chat</p>
-                                            <p class="text-slate-900 font-bold text-sm">+62 895 2425 4219</p>
+                                        <div class="contact-card-content">
+                                            <span class="contact-card-badge">WhatsApp Quick Chat</span>
+                                            <span class="contact-card-value">+62 895 2425 4219</span>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-arrow-right text-slate-300 group-hover/btn:text-green-600 group-hover/btn:translate-x-1 transition-all flex-shrink-0"
-                                        aria-hidden="true"></i>
+                                    <div class="contact-card-action">
+                                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                    </div>
                                 </a>
 
-                                <div
-                                    class="flex items-center justify-between bg-white border border-slate-200 p-4 rounded-2xl group/btn hover:border-blue-400 hover:shadow-lg hover:shadow-blue-100 transition-all transform hover:-translate-y-0.5 overflow-hidden">
-                                    <a href="mailto:igustiagung00@gmail.com"
-                                        class="flex items-center gap-3.5 overflow-hidden flex-grow">
-                                        <div
-                                            class="flex-shrink-0 w-11 h-11 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-lg">
+                                <div class="contact-card contact-card-email">
+                                    <a href="mailto:igustiagung00@gmail.com" class="contact-card-main-link" title="Kirim Email ke igustiagung00@gmail.com">
+                                        <div class="contact-card-icon-wrap email">
                                             <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                                         </div>
-                                        <div class="text-left overflow-hidden">
-                                            <p class="text-[10px] text-slate-400 font-bold uppercase">Email Inquiry</p>
-                                            <p class="text-slate-900 font-bold text-sm truncate">
-                                                igustiagung00@gmail.com</p>
+                                        <div class="contact-card-content">
+                                            <span class="contact-card-badge">Email Inquiry</span>
+                                            <span class="contact-card-value">igustiagung00@gmail.com</span>
                                         </div>
                                     </a>
-                                    <button type="button"
-                                        onclick="copyToClipboard('igustiagung00@gmail.com', 'Alamat email berhasil disalin!')"
-                                        title="Salin Email" aria-label="Salin alamat email"
-                                        class="text-slate-400 hover:text-blue-600 p-2 ml-2 hover:bg-blue-50 rounded-lg transition-colors flex-shrink-0">
-                                        <i class="fa-solid fa-copy text-base" aria-hidden="true"></i>
-                                    </button>
+                                    <div class="contact-card-action-group">
+                                        <button type="button"
+                                            onclick="copyToClipboard('igustiagung00@gmail.com', 'Alamat email berhasil disalin!')"
+                                            title="Salin Email" aria-label="Salin alamat email"
+                                            class="contact-action-btn-copy">
+                                            <i class="fa-solid fa-copy" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
