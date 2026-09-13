@@ -488,23 +488,23 @@ function openCertModal(imageSrc, title, issuer, credentialId, iconClass, bgClass
     if (modalCertTitle) modalCertTitle.textContent = title;
     if (modalCertIssuer) modalCertIssuer.textContent = issuer;
     if (modalCertId) modalCertId.textContent = credentialId || 'Kredensial Resmi Terverifikasi';
-    
+
     if (modalCertOpenTab) {
         modalCertOpenTab.href = targetDoc;
-        modalCertOpenTab.innerHTML = isPdf 
-            ? '<i class="fa-solid fa-file-pdf text-red-500"></i><span class="hidden sm:inline"> Buka PDF Asli</span>' 
+        modalCertOpenTab.innerHTML = isPdf
+            ? '<i class="fa-solid fa-file-pdf text-red-500"></i><span class="hidden sm:inline"> Buka PDF Asli</span>'
             : '<i class="fa-solid fa-arrow-up-right-from-square"></i><span class="hidden sm:inline"> Buka Penuh</span>';
     }
-    
+
     if (modalCertDownload) {
         modalCertDownload.href = targetDoc;
         const cleanName = title.replace(/[^a-zA-Z0-9_-]/g, '_');
         modalCertDownload.download = isPdf ? `${cleanName}.pdf` : `${cleanName}.jpg`;
-        modalCertDownload.innerHTML = isPdf 
-            ? '<i class="fa-solid fa-download"></i> Unduh PDF' 
+        modalCertDownload.innerHTML = isPdf
+            ? '<i class="fa-solid fa-download"></i> Unduh PDF'
             : '<i class="fa-solid fa-download"></i> Unduh File';
     }
-    
+
     if (modalCertBadgeIcon) {
         modalCertBadgeIcon.className = `w-10 h-10 rounded-xl flex items-center justify-center text-white shadow-sm flex-shrink-0 ${bgClass || 'bg-blue-600'}`;
         modalCertBadgeIcon.innerHTML = `<i class="${iconClass || 'fa-solid fa-award'} text-lg"></i>`;
@@ -549,8 +549,8 @@ const projectCaseStudies = {
         title: 'GymPulse Fitness',
         category: 'Web App & Fullstack',
         image: 'assets/GymPulse.png',
-        demoUrl: 'https://gym-pulse-fitness.vercel.app/',
-        codeUrl: 'https://github.com/IgustiAgung0512/GymPulse-Fitness',
+        demoUrl: 'https://gym-membership-app-opal.vercel.app/',
+        codeUrl: 'https://github.com/IgustiAgung0512/gym-membership-app',
         problem_id: 'Pusat kebugaran modern membutuhkan platform reservasi digital yang intuitif untuk mengeliminasi antrean kasir manual dan mempermudah anggota memilih kelas latihan secara real-time.',
         problem_en: 'Modern fitness centers face bottlenecks with manual on-site booking and fragmented class schedules. Members needed an intuitive digital hub to explore memberships and reserve sessions.',
         solution_id: 'Membangun Single Page Application (SPA) responsif berkecepatan tinggi dengan integrasi React.js, Tailwind CSS, animasi interaktif, serta modul reservasi kelas otomatis.',
@@ -563,8 +563,8 @@ const projectCaseStudies = {
         title: 'MarketFee Calculator',
         category: 'Web App & Fullstack',
         image: 'assets/MarketFee.webp',
-        demoUrl: 'https://market-fee.vercel.app/',
-        codeUrl: 'https://github.com/IgustiAgung0512/MarketFee',
+        demoUrl: 'https://igustiagung0512.github.io/kalkulator-marketplace/',
+        codeUrl: 'https://github.com/IgustiAgung0512/kalkulator-marketplace',
         problem_id: 'Seller e-commerce (Shopee, Tokopedia, TikTok Shop) sering mengalami selisih keuntungan akibat perhitungan komisi merchant, biaya layanan, dan gratis ongkir yang kompleks.',
         problem_en: 'E-commerce sellers across multiple channels frequently experience profit margins leakage due to complex tiered marketplace commission structures.',
         solution_id: 'Mengembangkan kalkulator biaya admin multi-channel instan dengan parameter dinamis per platform dan visualisasi margin laba bersih.',
@@ -577,8 +577,8 @@ const projectCaseStudies = {
         title: 'InvoiceMaster Pro',
         category: 'Web App & Fullstack',
         image: 'assets/InvoiceMaster.webp',
-        demoUrl: 'https://invoice-master-plum.vercel.app/',
-        codeUrl: 'https://github.com/IgustiAgung0512/InvoiceMaster',
+        demoUrl: 'https://igustiagung0512.github.io/invoice-generator/',
+        codeUrl: 'https://github.com/IgustiAgung0512/invoice-generator',
         problem_id: 'UMKM dan freelancer sering kesulitan mencetak invoice profesional dengan kalkulasi PPN/diskon otomatis yang bisa langsung diunduh ke PDF tanpa software berbayar.',
         problem_en: 'Small businesses and freelancers lack lightweight, free tools to generate polished invoices with automatic tax/discount calculations and instant PDF export.',
         solution_id: 'Menciptakan aplikasi generator invoice interaktif dengan live-preview, perhitungan subtotal otomatis, dan fitur ekspor PDF instan.',
@@ -664,7 +664,7 @@ function openProjectModal(projectId) {
     if (projectModalImg) projectModalImg.src = project.image;
     if (projectModalTitle) projectModalTitle.textContent = project.title;
     if (projectModalCategory) projectModalCategory.textContent = project.category;
-    
+
     if (projectModalProblem) {
         projectModalProblem.textContent = currentLang === 'id' ? project.problem_id : project.problem_en;
     }
