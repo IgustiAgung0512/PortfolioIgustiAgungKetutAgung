@@ -11,6 +11,16 @@ const translations = {
         nav_contact: "Contact",
         hero_badge: "HR &amp; Admin Finance • Front End Developer",
         hero_name: "I Gusti Agung Ketut Agung, S.Kom",
+        svc_badge: "Layanan",
+        svc_title: "Yang Bisa Saya Bantu",
+        svc_desc: "Tiga bidang kerja utama saya.",
+        svc1_title: "HR & Administrasi",
+        svc1_desc: "Administrasi SDM dan operasional bisnis sehari-hari.",
+        svc2_title: "Admin Keuangan",
+        svc2_desc: "Pelaporan keuangan e-commerce multi-channel dan pengolahan data dengan MS Excel.",
+        svc3_title: "Front End Development",
+        svc3_desc: "Website responsif dengan HTML/CSS, JavaScript, Tailwind, React JS, dan Laravel.",
+        bar_cv: "Unduh CV",
         hero_greeting: "Hi, I'm",
         hero_desc: "Sarjana Sistem Informasi (Predikat Cumlaude) yang memadukan kompetensi pengembangan teknologi informasi, analisis sistem, serta administrasi operasional bisnis (SDM & Keuangan) untuk menciptakan solusi yang efisien dan berdampak nyata.",
         hero_btn_exp: "Lihat Pengalaman",
@@ -73,6 +83,16 @@ const translations = {
         nav_contact: "Contact",
         hero_badge: "HR &amp; Finance Admin • Front End Developer",
         hero_name: "I Gusti Agung Ketut Agung, B.Comp",
+        svc_badge: "Services",
+        svc_title: "How I Can Help",
+        svc_desc: "My three main areas of work.",
+        svc1_title: "HR & Administration",
+        svc1_desc: "HR administration and day-to-day business operations.",
+        svc2_title: "Finance Admin",
+        svc2_desc: "Multi-channel e-commerce financial reporting and data work in MS Excel.",
+        svc3_title: "Front End Development",
+        svc3_desc: "Responsive websites with HTML/CSS, JavaScript, Tailwind, React JS, and Laravel.",
+        bar_cv: "Download CV",
         hero_greeting: "Hi, I'm",
         hero_desc: "Bachelor of Information Systems (Cum Laude) bridging IT development, systems analysis, and operational business administration (HR & Finance) to build scalable, high-impact digital solutions.",
         hero_btn_exp: "View Experience",
@@ -914,3 +934,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactForm();
     applyLanguage(currentLang);
 });
+
+// Theme toggle (dark is the default; the choice is saved only on manual toggle)
+function toggleTheme() {
+    const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('preferred_theme', next); } catch (e) { }
+}
+window.toggleTheme = toggleTheme;
