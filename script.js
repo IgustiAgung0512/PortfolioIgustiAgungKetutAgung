@@ -9,7 +9,8 @@ const translations = {
         nav_certificates: "Certificates",
         nav_project: "Project",
         nav_contact: "Contact",
-        hero_badge: "Sistem Informasi • IT Development • Business Administration",
+        hero_badge: "HR &amp; Admin Finance • Front End Developer",
+        hero_name: "I Gusti Agung Ketut Agung, S.Kom",
         hero_greeting: "Hi, I'm",
         hero_desc: "Sarjana Sistem Informasi (Predikat Cumlaude) yang memadukan kompetensi pengembangan teknologi informasi, analisis sistem, serta administrasi operasional bisnis (SDM & Keuangan) untuk menciptakan solusi yang efisien dan berdampak nyata.",
         hero_btn_exp: "Lihat Pengalaman",
@@ -45,7 +46,7 @@ const translations = {
         contact_title_1: "Siap Memulai",
         contact_title_2: "Proyek Baru?",
         contact_desc: "Jangan biarkan ide hebat Anda hanya menjadi rencana. Mari berdiskusi dan ubah ide tersebut menjadi solusi digital yang nyata.",
-        contact_loc: "Bogor, Indonesia",
+        contact_loc: "Jimbaran, Bali, Indonesia",
         contact_avail: "Tersedia untuk Pekerjaan / Freelance",
         form_title: "Kirim Pesan Langsung",
         form_name: "Nama Lengkap",
@@ -70,7 +71,8 @@ const translations = {
         nav_certificates: "Certificates",
         nav_project: "Projects",
         nav_contact: "Contact",
-        hero_badge: "Information Systems • IT Development • Business Administration",
+        hero_badge: "HR &amp; Finance Admin • Front End Developer",
+        hero_name: "I Gusti Agung Ketut Agung, B.Comp",
         hero_greeting: "Hi, I'm",
         hero_desc: "Bachelor of Information Systems (Cum Laude) bridging IT development, systems analysis, and operational business administration (HR & Finance) to build scalable, high-impact digital solutions.",
         hero_btn_exp: "View Experience",
@@ -106,7 +108,7 @@ const translations = {
         contact_title_1: "Ready to Start a",
         contact_title_2: "New Project?",
         contact_desc: "Let's turn your vision into reality. Reach out today to discuss potential collaborations, full-time opportunities, or web development projects.",
-        contact_loc: "Bogor, Indonesia",
+        contact_loc: "Jimbaran, Bali, Indonesia",
         contact_avail: "Available for Full-Time & Freelance",
         form_title: "Send a Direct Message",
         form_name: "Full Name",
@@ -126,11 +128,16 @@ const translations = {
     }
 };
 
-let currentLang = localStorage.getItem('preferred_lang') || 'id';
+function detectInitialLang() {
+    const saved = localStorage.getItem('preferred_lang');
+    if (saved === 'id' || saved === 'en') return saved;
+    const nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'id';
+    return nav.toLowerCase().startsWith('id') ? 'id' : 'en';
+}
+let currentLang = detectInitialLang();
 
 function applyLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('preferred_lang', lang);
     document.documentElement.lang = lang;
 
     // Update all elements with data-i18n
@@ -161,6 +168,7 @@ function applyLanguage(lang) {
 
 function toggleLanguage() {
     const nextLang = currentLang === 'id' ? 'en' : 'id';
+    localStorage.setItem('preferred_lang', nextLang);
     applyLanguage(nextLang);
     showToast(nextLang === 'id' ? 'Bahasa diubah ke Indonesia 🇮🇩' : 'Switched to English 🇬🇧');
 }
@@ -173,29 +181,20 @@ window.toggleLanguage = toggleLanguage;
 // ==========================================
 const textElement = document.getElementById('typing-text');
 let roles = [
-    "I Gusti Agung Ketut Agung, S.Kom",
-    "IT & Web Developer",
-    "Business & HR Administrator",
-    "Finance & Marketplace Admin",
-    "System Analyst"
+    "HR & Admin Finance",
+    "Front End Developer"
 ];
 
 function updateRolesForLanguage() {
     if (currentLang === 'en') {
         roles = [
-            "I Gusti Agung Ketut Agung, B.Comp",
-            "IT & Fullstack Developer",
-            "Business & HR Administrator",
-            "Finance & Marketplace Specialist",
-            "System Analyst"
+            "HR & Finance Admin",
+            "Front End Developer"
         ];
     } else {
         roles = [
-            "I Gusti Agung Ketut Agung, S.Kom",
-            "IT & Web Developer",
-            "Business & HR Administrator",
-            "Finance & Marketplace Admin",
-            "System Analyst"
+            "HR & Admin Finance",
+            "Front End Developer"
         ];
     }
 }
