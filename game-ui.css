@@ -194,3 +194,45 @@ body { animation: g-page-in .5s ease both; }
 .reveal.active > .grid > :nth-child(3), .reveal.active .dg-grid > :nth-child(3), .reveal.active .impact-metrics-grid > :nth-child(3) { animation-delay: .16s; }
 .reveal.active > .grid > :nth-child(4), .reveal.active .impact-metrics-grid > :nth-child(4) { animation-delay: .24s; }
 @media (prefers-reduced-motion: reduce) { body, .reveal *, .reveal { animation: none !important; } }
+
+/* Modals (Case Study + certificate lightbox) and card action buttons in game style */
+#project-modal, #cert-modal { background-color: rgba(31, 27, 77, 0.72) !important; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+#project-modal-content, #cert-modal-content {
+    background: #fff !important; border: 4px solid var(--g-ink) !important; border-radius: 22px !important;
+    box-shadow: 8px 8px 0 var(--g-ink) !important;
+}
+.project-modal-header, .cert-modal-header { background: var(--g-yellow) !important; border-bottom: 4px solid var(--g-ink) !important; }
+.project-modal-header h3, .cert-modal-header h3 { color: var(--g-ink) !important; font-family: var(--g-head); }
+#project-modal-category, .cert-modal-header p { color: #4b2d00 !important; }
+.project-modal-header > div > div:first-child, .cert-modal-header > div > div:first-child { border: 3px solid var(--g-ink); box-shadow: 2px 2px 0 var(--g-ink); border-radius: 12px !important; }
+.project-modal-body { background: var(--g-bg) !important; background-image: radial-gradient(rgba(59,130,246,.16) 1.5px, transparent 1.5px) !important; background-size: 22px 22px !important; }
+.cert-modal-body { background: var(--g-bg) !important; }
+#project-modal-img, #modal-cert-img { border: 3px solid var(--g-ink); border-radius: 14px !important; }
+.project-modal-body .border-slate-200 { border: 3px solid var(--g-ink) !important; border-radius: 16px !important; box-shadow: 4px 4px 0 var(--g-ink) !important; }
+.project-modal-body, .project-modal-body p { color: #4b4a78 !important; }
+.case-study-section-title { font-family: var(--g-pixel) !important; font-size: 0.62rem !important; line-height: 1.7; color: var(--g-ink) !important; font-weight: 400 !important; }
+.case-study-section-title i { color: var(--g-pink); }
+.case-study-impact-box { background: #fff3c4 !important; border: 3px solid var(--g-ink) !important; border-radius: 16px !important; box-shadow: 4px 4px 0 var(--g-ink); }
+.case-study-impact-box .case-study-section-title { color: var(--g-ink) !important; }
+.case-study-impact-box p { color: var(--g-ink) !important; }
+.project-modal-footer, .cert-modal-footer { background: #fff !important; border-top: 4px solid var(--g-ink) !important; }
+.modal-close-btn {
+    background: var(--g-pink) !important; color: var(--g-ink) !important; border: 3px solid var(--g-ink) !important;
+    border-radius: 12px !important; box-shadow: 3px 3px 0 var(--g-ink); font-family: var(--g-head); font-weight: 700;
+}
+.modal-close-btn:hover { background: #ff4d82 !important; color: var(--g-ink) !important; transform: translate(1px, 1px); }
+.modal-floating-close { background: var(--g-pink) !important; color: var(--g-ink) !important; border: 3px solid var(--g-ink) !important; box-shadow: 3px 3px 0 var(--g-ink); }
+.project-modal-footer button:not(.modal-close-btn), #project-modal-content .bg-slate-100 {
+    background: #fff !important; color: var(--g-ink) !important; border: 3px solid var(--g-ink) !important; border-radius: 12px !important; box-shadow: 3px 3px 0 var(--g-ink); font-family: var(--g-head);
+}
+.btn-project-demo, .btn-project-code, .btn-project-detail, .cert-modal-footer a, .cert-modal-footer button:not(.modal-close-btn) {
+    border: 3px solid var(--g-ink) !important; border-radius: 12px !important; box-shadow: 3px 3px 0 var(--g-ink); color: var(--g-ink) !important; font-family: var(--g-head) !important; font-weight: 700 !important;
+}
+.btn-project-demo { background: var(--g-green) !important; }
+.btn-project-code { background: #fff !important; }
+.btn-project-detail { background: #dff0ff !important; }
+.btn-project-demo:hover, .btn-project-code:hover, .btn-project-detail:hover { transform: translate(1px, 1px); box-shadow: 1px 1px 0 var(--g-ink); color: var(--g-ink) !important; }
+.project-card-actions { background: #fff !important; border-top: 3px solid var(--g-ink) !important; }
+@keyframes g-modal-pop { from { opacity: 0; transform: scale(.9) translateY(16px); } to { opacity: 1; transform: none; } }
+#project-modal.active #project-modal-content, #cert-modal.active #cert-modal-content { animation: g-modal-pop .3s cubic-bezier(.34, 1.4, .64, 1); }
+.cert-modal-footer a { background: var(--g-green) !important; }
