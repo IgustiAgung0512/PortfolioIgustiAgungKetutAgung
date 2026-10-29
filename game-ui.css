@@ -250,3 +250,23 @@ body { animation: g-page-in .5s ease both; }
 .project-tech-tag:active, .about-badge:active, #project-modal-tech > *:active { transform: translate(1px, 1px) scale(.96); box-shadow: 1px 1px 0 var(--g-ink); }
 .project-tech-tag:focus-visible, .about-badge:focus-visible { outline: 3px solid var(--g-pink); outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { .project-tech-tag:hover, .about-badge:hover, #project-modal-tech > *:hover { transform: none; } }
+
+/* GitHub CTA card at the end of Projects */
+.project-card-item[data-category="all"] {
+    background-color: var(--g-ink) !important;
+    background-image: radial-gradient(rgba(255, 203, 47, .22) 2px, transparent 2px), linear-gradient(160deg, #2a2570 0%, #1f1b4d 60%) !important;
+    background-size: 20px 20px, 100% 100% !important;
+    padding: 2rem !important; min-height: 320px;
+}
+.project-card-item[data-category="all"]::before { content: "BONUS"; background: var(--g-yellow); }
+.project-card-item[data-category="all"] h3 { color: var(--g-yellow) !important; text-shadow: 2px 2px 0 rgba(0, 0, 0, .35); }
+.project-card-item[data-category="all"] p { color: #dcd9ff !important; }
+.project-card-item[data-category="all"] .w-12 { background: #fff !important; border: 3px solid #fff; box-shadow: 3px 3px 0 var(--g-pink); width: 3.4rem; height: 3.4rem; border-radius: 14px !important; }
+.project-card-item[data-category="all"] .w-12 i { color: var(--g-ink) !important; font-size: 1.8rem; }
+.project-card-item[data-category="all"] > i.fa-github { color: rgba(255, 255, 255, .14) !important; font-size: 11rem; right: -1.5rem; bottom: -1.5rem; }
+.project-card-item[data-category="all"] a {
+    background: var(--g-green) !important; color: var(--g-ink) !important; border: 3px solid #fff !important; border-radius: 12px !important;
+    box-shadow: 4px 4px 0 var(--g-pink); font-family: var(--g-head); font-weight: 700; transition: transform .15s ease, box-shadow .15s ease;
+}
+.project-card-item[data-category="all"] a:hover { background: var(--g-yellow) !important; transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--g-pink); }
+.project-card-item[data-category="all"] .relative.z-10 { padding-top: 1.8rem; }
