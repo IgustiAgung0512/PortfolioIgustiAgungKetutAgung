@@ -236,3 +236,17 @@ body { animation: g-page-in .5s ease both; }
 @keyframes g-modal-pop { from { opacity: 0; transform: scale(.9) translateY(16px); } to { opacity: 1; transform: none; } }
 #project-modal.active #project-modal-content, #cert-modal.active #cert-modal-content { animation: g-modal-pop .3s cubic-bezier(.34, 1.4, .64, 1); }
 .cert-modal-footer a { background: var(--g-green) !important; }
+
+/* Interactive tech chips: hover / tap feedback */
+.project-tech-tag, .about-badge, #project-modal-tech > * {
+    cursor: pointer; transition: transform .15s cubic-bezier(.34, 1.56, .64, 1), box-shadow .15s ease, background-color .15s ease; -webkit-tap-highlight-color: transparent; user-select: none;
+}
+.project-tech-tag, #project-modal-tech > * { box-shadow: 2px 2px 0 var(--g-ink); }
+.project-tech-tag:hover, .about-badge:hover, #project-modal-tech > *:hover {
+    transform: translate(-2px, -3px) scale(1.08) rotate(-1.5deg); box-shadow: 4px 5px 0 var(--g-ink); background-color: var(--g-yellow) !important;
+}
+.project-tech-tag:nth-child(3n+2):hover, .about-badge:nth-child(3n+2):hover, #project-modal-tech > *:nth-child(3n+2):hover { background-color: #b9f3cd !important; transform: translate(-2px, -3px) scale(1.08) rotate(1.5deg); }
+.project-tech-tag:nth-child(3n):hover, .about-badge:nth-child(3n):hover, #project-modal-tech > *:nth-child(3n):hover { background-color: #ffc2d8 !important; }
+.project-tech-tag:active, .about-badge:active, #project-modal-tech > *:active { transform: translate(1px, 1px) scale(.96); box-shadow: 1px 1px 0 var(--g-ink); }
+.project-tech-tag:focus-visible, .about-badge:focus-visible { outline: 3px solid var(--g-pink); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .project-tech-tag:hover, .about-badge:hover, #project-modal-tech > *:hover { transform: none; } }
