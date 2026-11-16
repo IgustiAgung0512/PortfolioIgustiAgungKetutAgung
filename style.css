@@ -574,6 +574,14 @@ html { scroll-behavior: smooth; }
 .exp-company-blue { color: #2563eb !important; }
 .exp-blob-blue { background-color: #eff6ff !important; }
 
+.exp-badge-indigo {
+    background-color: #eef2ff !important;
+    color: #4338ca !important;
+    border: 1px solid #c7d2fe !important;
+}
+.exp-company-indigo { color: #4f46e5 !important; }
+.exp-blob-indigo { background-color: #eef2ff !important; }
+
 /* Modern Elegant Jobdesk Bullet Indicators */
 .exp-bullet {
     display: inline-block;
@@ -607,6 +615,11 @@ html { scroll-behavior: smooth; }
 .exp-bullet-blue {
     background-color: #2563eb;
     box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.exp-bullet-indigo {
+    background-color: #4f46e5;
+    box-shadow: 0 0 0 3px #e0e7ff;
 }
 
 /* --- PHOTO INTERACTION --- */
