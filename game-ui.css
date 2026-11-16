@@ -129,10 +129,11 @@ section + section::before {
     font-family: var(--g-pixel); font-size: 0.6rem; line-height: 1; color: var(--g-ink);
     background: var(--g-yellow); border: 3px solid var(--g-ink); border-radius: 8px; box-shadow: 3px 3px 0 var(--g-ink);
 }
-#experience .timeline-card:nth-child(1)::after { content: "LV 4"; }
-#experience .timeline-card:nth-child(2)::after { content: "LV 3"; }
-#experience .timeline-card:nth-child(3)::after { content: "LV 2"; }
-#experience .timeline-card:nth-child(4)::after { content: "LV 1"; }
+#experience .timeline-card:nth-child(1)::after { content: "LV 5"; }
+#experience .timeline-card:nth-child(2)::after { content: "LV 4"; }
+#experience .timeline-card:nth-child(3)::after { content: "LV 3"; }
+#experience .timeline-card:nth-child(4)::after { content: "LV 2"; }
+#experience .timeline-card:nth-child(5)::after { content: "LV 1"; }
 #experience .grid { row-gap: 3rem !important; }
 .experience-date-badge { background: #fff !important; border: 2px solid var(--g-ink) !important; color: var(--g-ink) !important; border-radius: 10px !important; }
 .timeline-card [class*="exp-badge"] { border: 2px solid var(--g-ink) !important; color: var(--g-ink) !important; border-radius: 8px !important; }
